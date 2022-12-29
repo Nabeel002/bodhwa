@@ -1,0 +1,28 @@
+
+    <h1 class="heading-1 center-text _500-medium-w">{{ section.settings.head }}</h1>
+    <p class="paragraph-gifting m-auto">{{ section.settings.paragraph }}</p>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-content-section",
+  "tag": "div",
+  "class": "section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "head",
+      "label": "head",
+      "default": "A Little About Our Gifting Service"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "paragraph",
+      "default": "Crystals are a gift with deeper meaning. If you want to keep your gift hampers professional or give them a personal touch, crystals will serve both purposes. Nothing beats the gift of peace & joy, and crystal gift hampers will bring peace, love, and joy to the receiver's life. Customize as per your requirement or choose from our pre-curated hampers for your clients & employees."
+    }
+  ]
+}
+{% endschema %}

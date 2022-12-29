@@ -1,0 +1,60 @@
+
+        <div class="_2-col-grid">
+          <div id="w-node-_32802938-ba76-e3d8-4273-76a71d1c2b3c-1d1c2b3a" class="_37em-width-image">{%- if section.settings.image_1 == nil -%}<img src="{{ 'mask-group-32.jpeg' | asset_url }}" loading="lazy" alt="" class="image-max-cover">{%- else -%}<img src="{{ section.settings.image_1.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_1.alt | escape }}" class="image-max-cover" srcset="{{ section.settings.image_1 | img_url: '1920x' }} 1920w,{{ section.settings.image_1 | img_url: '1600x' }} 1600w,{{ section.settings.image_1 | img_url: '1366x' }} 1366w,{{ section.settings.image_1 | img_url: '1024x' }} 1024w,{{ section.settings.image_1 | img_url: '768x' }} 768w,{{ section.settings.image_1 | img_url: '640x' }} 640w">{%- endif -%}
+            <div class="z-index-div">
+              <h1 class="heading-2 playfair-display">{{ section.settings.text_1 }}</h1>
+              <a href="{{ section.settings.button_url }}" class="shop-now-btn _2em-left-margin w-button">{{ 't1a08228c' | t }}<br></a>
+            </div>
+          </div>
+          <div id="w-node-_32802938-ba76-e3d8-4273-76a71d1c2b44-1d1c2b3a" class="_37em-width-image">{%- if section.settings.image_2 == nil -%}<img src="{{ 'mask-group-32.jpeg' | asset_url }}" loading="lazy" alt="" class="image-max-cover">{%- else -%}<img src="{{ section.settings.image_2.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_2.alt | escape }}" class="image-max-cover" srcset="{{ section.settings.image_2 | img_url: '1920x' }} 1920w,{{ section.settings.image_2 | img_url: '1600x' }} 1600w,{{ section.settings.image_2 | img_url: '1366x' }} 1366w,{{ section.settings.image_2 | img_url: '1024x' }} 1024w,{{ section.settings.image_2 | img_url: '768x' }} 768w,{{ section.settings.image_2 | img_url: '640x' }} 640w">{%- endif -%}
+            <div class="z-index-div left">
+              <h1 class="heading-2 playfair-display">{{ section.settings.text_2 }}</h1>
+              <a href="{{ section.settings.button_2 }}" class="shop-now-btn _2em-left-margin w-button">{{ 't1a08228c' | t }}<br></a>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');{% unless request.design_mode %}currentSection.id = "w-node-_32802938-ba76-e3d8-4273-76a71d1c2b3a-1d1c2b3a";{% endunless %}currentSection.setAttribute("class","wf-section");</script>
+        
+{% schema %}
+{
+  "name": "section-festive-grid",
+  "tag": "div",
+  "class": "wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "text-1",
+      "default": "Bracelets"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "text-2",
+      "default": "Bracelets"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "button-url"
+    },
+    {
+      "type": "url",
+      "id": "button_2",
+      "label": "button 2"
+    }
+  ]
+}
+{% endschema %}

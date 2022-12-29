@@ -1,0 +1,32 @@
+
+      <div class="focused-category-section bg-f0eee4">
+        <div class="div-block-10">
+          <h1 class="heading-2 color-6b5c5c">{{ section.settings.category_heading }}</h1>
+          <p class="body-font font-light">{{ section.settings.paragraph }}</p>
+        </div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","wf-section");</script>
+        
+{% schema %}
+{
+  "name": "section-festive-content",
+  "tag": "div",
+  "class": "wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "category_heading",
+      "label": "Category-heading",
+      "default": "BEST SELLERS"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Too often, the jewelry pieces we love actually fuel conflict, unsafe working conditions, and environmental destruction in the places that the materials used are mined.We aim to change that."
+    }
+  ]
+}
+{% endschema %}

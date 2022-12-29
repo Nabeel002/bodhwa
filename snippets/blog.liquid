@@ -1,0 +1,8 @@
+<article class="blog-wrapper w-dyn-list" udy-collection="post">
+        {%- unless items_length == 0 -%}<div role="list" class="grid-3col w-dyn-items">
+          {{ listItems }}
+        </div>{%- endunless -%}
+        {%- if items_length == 0 -%}<div class="w-dyn-empty">
+          <div>{{ 't3d503d2b' | t }}</div>
+        </div>{%- endif -%}
+      </article>

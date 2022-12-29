@@ -1,0 +1,22 @@
+
+    <div class="container">
+      <div class="gifting-hero-image">{%- if section.settings.subhero_image == nil -%}<img class="image-max-cover" src="{{ 'whatsapp-image-2022-08-08-at-5.03.53-PM.jpeg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, 91vw" loading="lazy" srcset="{{ 'whatsapp-image-2022-08-08-at-5.03.53-PM-p-500.jpeg' | asset_url }} 500w, {{ 'whatsapp-image-2022-08-08-at-5.03.53-PM-p-800.jpeg' | asset_url }} 800w, {{ 'whatsapp-image-2022-08-08-at-5.03.53-PM-p-1080.jpeg' | asset_url }} 1080w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.subhero_image.src | img_url: 'master' }}" alt="{{ section.settings.subhero_image.alt | escape }}" loading="lazy" srcset="{{ section.settings.subhero_image | img_url: '1920x' }} 1920w,{{ section.settings.subhero_image | img_url: '1600x' }} 1600w,{{ section.settings.subhero_image | img_url: '1366x' }} 1366w,{{ section.settings.subhero_image | img_url: '1024x' }} 1024w,{{ section.settings.subhero_image | img_url: '768x' }} 768w,{{ section.settings.subhero_image | img_url: '640x' }} 640w">{%- endif -%}</div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section space-10 wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-subhero",
+  "tag": "div",
+  "class": "section space-10 wf-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "subhero_image",
+      "label": "subhero-image"
+    }
+  ]
+}
+{% endschema %}

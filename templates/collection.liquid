@@ -1,0 +1,28 @@
+{%- assign headerSnippetPath = "header-index" -%}{%- assign wfPage = "616a6acafdb3cb5d75b1a615" -%}{%- assign bodyClasses = "" -%}
+  {%- render 'google-tag-manager' -%}
+  {%- render 'global-css-and-elements' -%}
+  {%- section 'announcement-ribbon' -%}
+  {%- section 'new-nav-pc' -%}
+  <div class="aside-section padding-bottom-2em wf-section">
+    <div class="container">
+      <div class="w-layout-grid aside-grid">
+        {%- render 'left-nav' -%}
+        <div class="right-section">
+          <div class="breadcrumb-wrapper">
+            <a href="{{ routes.root_url }}" class="breadcrumb-link s-1-6em">{{ 't21ecdf' | t }}</a>
+            <div class="slash-with-size p-l-0-44em p-r-0-44em">{{ 't2f' | t }}</div>
+            <a href="{{ collection.url }}" class="breadcrumb-link s-1-6em">{{ collection.title }}</a>
+          </div>
+          <h1 class="heading-2 m-bottom-0-39em">{{ collection.title }}</h1>
+          <p class="body-font">{{ collection.description }}</p>
+          {%- render "products_archive_paginated_by_18" -%}
+        </div>
+      </div>
+    </div>
+  </div>
+  {%- render 'footer' -%}
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=613b36b97ccfb87f99eaeb93" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+{{ 'udesly-shopify.min.js' | asset_url | script_tag }}

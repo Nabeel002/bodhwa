@@ -1,0 +1,152 @@
+
+    <div class="container">
+      <div class="div-block-10">
+        <h1 class="heading-2 center bottom-padding-20">{{ 'tn470644e5' | t }}</h1>
+        <p class="body-font center max-width-61ch">{{ section.settings.text_area }}</p>
+        <div class="w-layout-grid offer-grid">
+          <a href="{{ section.settings.url_1 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image1 == nil -%}<img class="image-max-cover" src="{{ 'carnelian-raw-tumble.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 35vw, (max-width: 991px) 16vw, 8vw" loading="lazy" srcset="{{ 'carnelian-raw-tumble-p-500.jpeg' | asset_url }} 500w, {{ 'carnelian-raw-tumble-p-800.jpeg' | asset_url }} 800w, {{ 'carnelian-raw-tumble.jpg' | asset_url }} 993w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image1.src | img_url: 'master' }}" alt="{{ section.settings.image1.alt | escape }}" loading="lazy" srcset="{{ section.settings.image1 | img_url: '1920x' }} 1920w,{{ section.settings.image1 | img_url: '1600x' }} 1600w,{{ section.settings.image1 | img_url: '1366x' }} 1366w,{{ section.settings.image1 | img_url: '1024x' }} 1024w,{{ section.settings.image1 | img_url: '768x' }} 768w,{{ section.settings.image1 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_1 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_1 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.url_2 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image2 == nil -%}<img class="image-max-cover" src="{{ '615a982dbfd51f15978c1f39_5fdb202203d4c6ba5864b52b_b_20gr_20ma_20br_20he_20_3_20copy-618093.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 37vw, (max-width: 767px) 18vw, (max-width: 991px) 17vw, 9vw" loading="lazy" srcset="{{ '615a982dbfd51f15978c1f39_5fdb202203d4c6ba5864b52b_b_20gr_20ma_20br_20he_20_3_20copy-618093-p-500.jpeg' | asset_url }} 500w, {{ '615a982dbfd51f15978c1f39_5fdb202203d4c6ba5864b52b_b_20gr_20ma_20br_20he_20_3_20copy-618093-p-800.jpeg' | asset_url }} 800w, {{ '615a982dbfd51f15978c1f39_5fdb202203d4c6ba5864b52b_b_20gr_20ma_20br_20he_20_3_20copy-618093-p-1080.jpeg' | asset_url }} 1080w, {{ '615a982dbfd51f15978c1f39_5fdb202203d4c6ba5864b52b_b_20gr_20ma_20br_20he_20_3_20copy-618093.jpg' | asset_url }} 1229w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image2.src | img_url: 'master' }}" alt="{{ section.settings.image2.alt | escape }}" loading="lazy" srcset="{{ section.settings.image2 | img_url: '1920x' }} 1920w,{{ section.settings.image2 | img_url: '1600x' }} 1600w,{{ section.settings.image2 | img_url: '1366x' }} 1366w,{{ section.settings.image2 | img_url: '1024x' }} 1024w,{{ section.settings.image2 | img_url: '768x' }} 768w,{{ section.settings.image2 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_2 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_2 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.url_3 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image3 == nil -%}<img src="{{ '_dsc1702-3-p-500.jpeg' | asset_url }}" loading="lazy" alt="a pic of a stone" class="image-max-cover">{%- else -%}<img src="{{ section.settings.image3.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image3.alt | escape }}" class="image-max-cover" srcset="{{ section.settings.image3 | img_url: '1920x' }} 1920w,{{ section.settings.image3 | img_url: '1600x' }} 1600w,{{ section.settings.image3 | img_url: '1366x' }} 1366w,{{ section.settings.image3 | img_url: '1024x' }} 1024w,{{ section.settings.image3 | img_url: '768x' }} 768w,{{ section.settings.image3 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_3 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_3 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.url_4 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image4 == nil -%}<img class="image-max-cover" src="{{ 'diya.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 33vw, (max-width: 767px) 13vw, 9vw" loading="lazy" srcset="{{ 'diya-p-500.jpeg' | asset_url }} 500w, {{ 'diya.jpg' | asset_url }} 767w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image4.src | img_url: 'master' }}" alt="{{ section.settings.image4.alt | escape }}" loading="lazy" srcset="{{ section.settings.image4 | img_url: '1920x' }} 1920w,{{ section.settings.image4 | img_url: '1600x' }} 1600w,{{ section.settings.image4 | img_url: '1366x' }} 1366w,{{ section.settings.image4 | img_url: '1024x' }} 1024w,{{ section.settings.image4 | img_url: '768x' }} 768w,{{ section.settings.image4 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_4 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_4 }}</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","diwali-section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "diwali section-2",
+  "tag": "div",
+  "class": "diwali-section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_heading_1",
+      "label": "sub heading 1",
+      "default": "From ₹140"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "heading 1",
+      "default": "Tumble & Chips"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_2",
+      "label": "sub heading 2",
+      "default": "From ₹499 "
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "heading 2",
+      "default": "Healing Bracelets"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_3",
+      "label": "sub heading 3",
+      "default": "Crystal Kits"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "label": "heading 3",
+      "default": "New Release"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_4",
+      "label": "sub heading 4",
+      "default": "Under ₹1499"
+    },
+    {
+      "type": "text",
+      "id": "heading_4",
+      "label": "heading 4",
+      "default": "Gifts"
+    },
+    {
+      "type": "textarea",
+      "id": "text_area",
+      "label": "text area",
+      "default": "The Estrella Collection has been our most loved collection since we launched it! These dainty yet modern style catches everyone’s attention.Wear it every day as your statement necklace. Wear it close to your Heart, make it a part of your being. ❤️🕊️"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "image1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "image2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "image3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "image4"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "url 1"
+    },
+    {
+      "type": "url",
+      "id": "url_2",
+      "label": "url 2"
+    },
+    {
+      "type": "url",
+      "id": "url_3",
+      "label": "url 3"
+    },
+    {
+      "type": "url",
+      "id": "url_4",
+      "label": "url 4"
+    }
+  ]
+}
+{% endschema %}

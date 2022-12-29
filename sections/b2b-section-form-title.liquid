@@ -1,0 +1,38 @@
+
+    <div class="flex">
+      <h1 class="custom-heading">{{ section.settings.form_heading }}</h1>
+      <div class="nam-wrapper">
+        <div class="hr left"></div>
+        <div class="text-block-23">{{ section.settings.form_subtitle }}</div>
+        <div class="hr"></div>
+      </div>
+      <div class="w-embed w-script">
+        <div class="_form_22"></div>
+        <script src="https://bodhgemandcrystals.activehosted.com/f/embed.php?id=22" type="text/javascript" charset="utf-8"></script>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-section-form-title",
+  "tag": "div",
+  "class": "section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "form_heading",
+      "label": "form-heading",
+      "default": "Get To Know Us"
+    },
+    {
+      "type": "text",
+      "id": "form_subtitle",
+      "label": "form-subtitle",
+      "default": "To Make Every Expierence Personal"
+    }
+  ]
+}
+{% endschema %}

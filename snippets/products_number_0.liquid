@@ -1,0 +1,22 @@
+{% capture listItems %}
+                        {% for item in collections.all.products %}
+                        <div role="listitem" class="search-result-item w-dyn-item">
+                <a href="#" class="product-card-wrapper w-inline-block">
+                  <div class="product-image-wrapper"><img src="{{ item.featured_image | img_url: 'master' }}" loading="lazy" alt="{{ item.featured_image.alt }}" class="image-max-cover" data-commerce-type="variation-image" srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w"></div>
+                  <div class="product-content-wrapper">
+                    <div class="product-card-heading-copy">{{ item.title }}</div>
+                    <div data-commerce-type="variation-price" class="product-price-holder">{{ item.price | money }}</div>
+                  </div>
+                </a>
+              </div>
+                        {% endfor %}
+                        {% endcapture %}
+{% assign items_length = listItems | strip | size %}
+    <div class="search-result-wrapper w-dyn-list" udy-collection="product">
+            {%- unless items_length == 0 -%}<div role="list" class="search-result-list w-dyn-items">
+              {{ listItems }}
+            </div>{%- endunless -%}
+            {%- if items_length == 0 -%}<div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>{%- endif -%}
+          </div>

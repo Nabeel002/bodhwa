@@ -1,0 +1,158 @@
+
+    <div class="container">
+      <div class="div-block-10">
+        <h1 class="heading-2 center bottom-padding-20">{{ section.settings.heading }}</h1>
+        <p class="body-font center max-width-61ch">{{ section.settings.text }}</p>
+        <div class="w-layout-grid offer-grid">
+          <a href="{{ section.settings.link_1 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image_1 == nil -%}<img class="image-max-cover" src="{{ 'carnelian-raw-tumble.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 63vw, (max-width: 991px) 44vw, 24vw" loading="lazy" srcset="{{ 'carnelian-raw-tumble-p-500.jpeg' | asset_url }} 500w, {{ 'carnelian-raw-tumble-p-800.jpeg' | asset_url }} 800w, {{ 'carnelian-raw-tumble.jpg' | asset_url }} 993w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_1.src | img_url: 'master' }}" alt="{{ section.settings.image_1.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_1 | img_url: '1920x' }} 1920w,{{ section.settings.image_1 | img_url: '1600x' }} 1600w,{{ section.settings.image_1 | img_url: '1366x' }} 1366w,{{ section.settings.image_1 | img_url: '1024x' }} 1024w,{{ section.settings.image_1 | img_url: '768x' }} 768w,{{ section.settings.image_1 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_1 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_1 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.link_2 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image_2 == nil -%}<img class="image-max-cover" src="{{ 'pyramids.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 50vw, (max-width: 991px) 35vw, 19vw" loading="lazy" srcset="{{ 'pyramids-p-500.jpeg' | asset_url }} 500w, {{ 'pyramids.jpg' | asset_url }} 680w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_2.src | img_url: 'master' }}" alt="{{ section.settings.image_2.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_2 | img_url: '1920x' }} 1920w,{{ section.settings.image_2 | img_url: '1600x' }} 1600w,{{ section.settings.image_2 | img_url: '1366x' }} 1366w,{{ section.settings.image_2 | img_url: '1024x' }} 1024w,{{ section.settings.image_2 | img_url: '768x' }} 768w,{{ section.settings.image_2 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_2 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_2 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.link_3 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image_3 == nil -%}<img class="image-max-cover" src="{{ '7-chakra-tumble.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 63vw, (max-width: 991px) 44vw, 24vw" loading="lazy" srcset="{{ '7-chakra-tumble-p-500.jpeg' | asset_url }} 500w, {{ '7-chakra-tumble-p-800.jpeg' | asset_url }} 800w, {{ '7-chakra-tumble-p-1080.jpeg' | asset_url }} 1080w, {{ '7-chakra-tumble.jpg' | asset_url }} 1175w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_3.src | img_url: 'master' }}" alt="{{ section.settings.image_3.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_3 | img_url: '1920x' }} 1920w,{{ section.settings.image_3 | img_url: '1600x' }} 1600w,{{ section.settings.image_3 | img_url: '1366x' }} 1366w,{{ section.settings.image_3 | img_url: '1024x' }} 1024w,{{ section.settings.image_3 | img_url: '768x' }} 768w,{{ section.settings.image_3 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_3 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_3 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.link_4 }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper pink-border">
+              <div class="product-image-wrapper">{%- if section.settings.image_4 == nil -%}<img class="image-max-cover" src="{{ 'bpramtraa_l.jpeg' | asset_url }}" alt="" sizes="(max-width: 479px) 75vw, (max-width: 991px) 53vw, 29vw" loading="lazy" srcset="{{ 'bpramtraa_l-p-1080.jpeg' | asset_url }} 1080w, {{ 'bpramtraa_l-p-1600.jpeg' | asset_url }} 1600w, {{ 'bpramtraa_l-p-2000.jpeg' | asset_url }} 2000w, {{ 'bpramtraa_l.jpeg' | asset_url }} 2048w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_4.src | img_url: 'master' }}" alt="{{ section.settings.image_4.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_4 | img_url: '1920x' }} 1920w,{{ section.settings.image_4 | img_url: '1600x' }} 1600w,{{ section.settings.image_4 | img_url: '1366x' }} 1366w,{{ section.settings.image_4 | img_url: '1024x' }} 1024w,{{ section.settings.image_4 | img_url: '768x' }} 768w,{{ section.settings.image_4 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_4 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_4 }}</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","diwali-section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "offer-section-home-decor",
+  "tag": "div",
+  "class": "diwali-section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "heading",
+      "default": "Best Festive Offers"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "text",
+      "default": "The Estrella Collection has been our most loved collection since we launched it! These dainty yet modern style catches everyone’s attention.Wear it every day as your statement necklace. Wear it close to your Heart, make it a part of your being. ❤️🕊️"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_1",
+      "label": "sub heading 1",
+      "default": "From ₹140"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "heading 1",
+      "default": "Tumble & Chips"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_2",
+      "label": "sub heading 2",
+      "default": "10-40% OFF"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "heading 2",
+      "default": "Home Decor"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_3",
+      "label": "sub heading 3",
+      "default": "7 Chakra Set"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "label": "heading 3",
+      "default": "New Release"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_4",
+      "label": "sub heading 4",
+      "default": "Crystal Trees"
+    },
+    {
+      "type": "text",
+      "id": "heading_4",
+      "label": "heading 4",
+      "default": "On Sale"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "image 4"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "link 1"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "link 2"
+    },
+    {
+      "type": "url",
+      "id": "link_3",
+      "label": "link 3"
+    },
+    {
+      "type": "url",
+      "id": "link_4",
+      "label": "link 4"
+    }
+  ]
+}
+{% endschema %}

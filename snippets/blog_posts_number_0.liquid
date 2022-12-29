@@ -1,0 +1,21 @@
+{% capture listItems %}
+                        {% for item in blogs['post'].articles %}
+                        <div id="w-node-_60f6839f-db52-39d6-0d57-53324b4a5336-e036a499" role="listitem" class="individual-blog w-dyn-item">
+          <div class="blog-thumbnail-wrapper"><img src="{{ item.metafields.udesly['thumbnail-image'].src }}" loading="lazy" alt="" class="image-max-cover"></div>
+          <div class="flex space-between">
+            <div class="blog-published-date">{{ item.published_at | date: "%B %e, %Y" }}</div>
+            <h1 class="individual-blog-heading">{{ item.title }}</h1>
+            <p class="blog-summary">{{ item.excerpt }}</p>
+          </div>
+        </div>
+                        {% endfor %}
+                        {% endcapture %}
+{% assign items_length = listItems | strip | size %}
+    <div class="w-dyn-list" udy-collection="post">
+      {%- unless items_length == 0 -%}<div role="list" class="collection-list-9 w-dyn-items">
+        {{ listItems }}
+      </div>{%- endunless -%}
+      {%- if items_length == 0 -%}<div class="w-dyn-empty">
+        <div>No items found.</div>
+      </div>{%- endif -%}
+    </div>

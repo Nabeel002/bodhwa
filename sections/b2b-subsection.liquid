@@ -1,0 +1,25 @@
+
+    <div class="grid-wrapper">
+      <div class="_2-col-grid"><img src="{{ 'blog-header-image-2.png' | asset_url }}" loading="lazy" id="w-node-f8b93077-40a5-a7a9-f190-c312980468fc-396d0257" sizes="(max-width: 479px) 100vw, (max-width: 991px) 29vw, 100vw" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w" alt="">
+        <h1 id="w-node-_90c6013d-a5da-d3ba-ee9a-60a494b189a7-396d0257" class="heading-2 right-centred left-centered _3-5em">{{ section.settings.subsection_heading }}</h1>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section space-10 wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-subsection",
+  "tag": "div",
+  "class": "section space-10 wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subsection_heading",
+      "label": "subsection-heading",
+      "default": "ForEmployees"
+    }
+  ]
+}
+{% endschema %}

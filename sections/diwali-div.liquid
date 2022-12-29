@@ -1,0 +1,47 @@
+
+    <div class="w-embed">
+      <div class="grid-categorie-wrapper">
+        {% for collection in section.settings.collection_list %}
+        <a id="w-node-_6332c9c0-c006-989a-c290-d320c9883e4d-81725d24" href="{{ section.settings.page_link }}" class="categorie-link border w-inline-block">
+          <div class="categeory-image-container border"><img src="{{ collection.image | image_url }}" loading="lazy" class="image-max-cover"></div>
+          <div class="categorie-content-wrapper">
+            <h1 class="heading-4 center">{{ collection.title }}</h1>
+          </div>
+        </a>
+        {%endfor%}
+      </div>
+      {% schema %}
+      {
+      "name": "Feature collection",
+      "settings": [
+      {
+      "type": "collection_list",
+      "id": "collection_list",
+      "label": "Collections"
+      }
+      ]
+      }
+      {% endschema %}
+      {% stylesheet %}
+      {% endstylesheet %}
+      {% javascript %}
+      {% endjavascript %}
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","diwali-div");</script>
+        
+{% schema %}
+{
+  "name": "diwali-div",
+  "tag": "div",
+  "class": "diwali-div",
+  "settings": [
+    {
+      "type": "url",
+      "id": "page_link",
+      "label": "page link"
+    }
+  ]
+}
+{% endschema %}
