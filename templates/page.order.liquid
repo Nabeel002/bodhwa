@@ -3,72 +3,72 @@
   {%- section 'new-nav-pc' -%}
   <div class="account_section wf-section">
     <div class="container center-align w-container">
-      <a href="#" class="back-to-account s-1-25em border-bottom">{{ 'tddd885a' | t }}</a>
+      <a href="#" class="back-to-account s-1-25em border-bottom">Return To Account Details</a>
       <div class="div-container m-top-2-78em m-bottom-0-9em"></div>
       <div class="information-wrapper">
         {%- if customer.orders.size != 0 -%}<div class="heading-wrapper m-bottom-1-39em">
-          <div class="text-block-18">{{ 'tn73864dfc' | t }}</div>
+          <div class="text-block-18">Username:</div>
           <div>{{ customer.email }}</div>
           <div class="nam-wrapper">
             <div class="order-text">{{ customer.first_name }}</div>
             <div class="order-text">{{ customer.last_name }}</div>
           </div>
           <div class="address">
-            <h1 class="heading-3 font-weight-500">{{ 't789bff0f' | t }}</h1>
-            <div class="order-text">{{ 'tn78be3d5b' | t }}</div>
-            <h1 class="heading-3 font-weight-500">{{ 'tn35b49c7e' | t }}</h1>
-            <div class="order-text">{{ 'tn78be3d5b' | t }}</div>
+            <h1 class="heading-3 font-weight-500">Billing Address</h1>
+            <div class="order-text">New york, 1212</div>
+            <h1 class="heading-3 font-weight-500">Shipping Address</h1>
+            <div class="order-text">New york, 1212</div>
           </div>
           <div class="fulfilment">
-            <h1 class="heading-3 font-weight-500">{{ 't7f7265da' | t }}</h1>
-            <div order="fulfillment-status" class="order-text">{{ 't9c988ff' | t }}</div>
+            <h1 class="heading-3 font-weight-500">Fullfilment Status</h1>
+            <div order="fulfillment-status" class="order-text">Fulfilled</div>
           </div>
         </div>{%- endif -%}
         {%- if customer.orders.size != 0 -%}{%- for order in customer.orders -%}<div class="heading-wrapper m-bottom-1-39em">
-          <h1 class="heading-3 font-weight-500">{{ 't670a5780' | t }}</h1>
+          <h1 class="heading-3 font-weight-500">Ordered at :</h1>
           <div class="nam-wrapper">
             <div class="order-text">{{ order.created_at | date: "%a, %b %d, %y" }}</div>
           </div>
           <div class="address">
-            <h1 class="heading-3 font-weight-500">{{ 't3ca00fa9' | t }}</h1>
+            <h1 class="heading-3 font-weight-500">Financial Status</h1>
             <div>{{ order.financial_status_label }}</div>
           </div>
           <div class="cancellation">
-            <h1 class="heading-3 font-weight-500">{{ 't49b68aaa' | t }}</h1>
+            <h1 class="heading-3 font-weight-500">Cancel Reason</h1>
             <div class="order-text">{{ order.cancel_reason_label }}</div>
             <div class="order-text">{{ order.cancelled_at | date: "%a, %b %d, %y" }}</div>
           </div>
           <div class="cancellation">
-            <h1 class="heading-3 font-weight-500">{{ 'tn5fa1363c' | t }}</h1>
+            <h1 class="heading-3 font-weight-500">Order Note</h1>
             <div class="order-text">{{ order.note }}</div>
           </div>
         </div>{%- endfor -%}{%- endif -%}
       </div>
     </div>
     <div class="container w-container">
-      <h1 class="heading-2 _500-medium-w align-center m-bottom-1-39em m-top-0-56em">{{ 't548aaf30' | t }}</h1>
+      <h1 class="heading-2 _500-medium-w align-center m-bottom-1-39em m-top-0-56em">Order Details</h1>
       {%- render "products" -%}
       <div class="div-block-7">
         <div class="shipping-block">
-          <div class="body-font order-text">{{ 't1422d961' | t }}</div>
+          <div class="body-font order-text">Discount</div>
           <div class="body-font order-text">{{ gift_card.code | format_code }}</div>
-          <div cart="total-discount" class="body-font order-text">{{ 'tdd19' | t }}</div>
+          <div cart="total-discount" class="body-font order-text">999</div>
         </div>
         <div class="shipping-block">
-          <div class="body-font order-text">{{ 'tn1aeabe32' | t }}</div>
-          <div class="body-font order-text">{{ 'tn1d339267' | t }}</div>
-          <div order="shipping" class="body-font order-text">{{ 't6ba' | t }}</div>
+          <div class="body-font order-text">Shipping</div>
+          <div class="body-font order-text">Maruti Courier</div>
+          <div order="shipping" class="body-font order-text">60</div>
         </div>
         <div class="shipping-block">
-          <div class="body-font order-text">{{ 't1bfab' | t }}</div>
-          <div class="body-font order-text">{{ 'tn31332771' | t }}</div>
-          <div class="body-font order-text">{{ 't6c3' | t }}</div>
+          <div class="body-font order-text">tax</div>
+          <div class="body-font order-text">IGST 0.5%</div>
+          <div class="body-font order-text">69</div>
         </div>
       </div>
       <div class="div-block-7">
         <div class="div-block-8">
-          <div id="w-node-_2b022359-e609-2aed-f47a-a56a261e84ff-dbb1a61e" class="body-font order-text">{{ 't4d3eb24' | t }}</div>
-          <div order="total" class="order-text">{{ 't17f454' | t }}</div>
+          <div id="w-node-_2b022359-e609-2aed-f47a-a56a261e84ff-dbb1a61e" class="body-font order-text">Total</div>
+          <div order="total" class="order-text">330$</div>
         </div>
       </div>
     </div>

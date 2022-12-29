@@ -3,35 +3,8 @@
   <div class="_1-col-grid">
     {%- section 'section-festive-collage' -%}
     {%- section 'section-festive-content' -%}
-    <div class="wf-section">
-      <div class="container">
-        <div class="w-layout-grid _5-col-grid">
-          <a option:url="page link" id="w-node-_1142df18-0201-4fdb-76ce-f463cffa8d5a-cffa8d57" href="https://bodhgemandcrystals.com/collections/crystal-rings" class="categorie-link border w-inline-block">
-            <div class="categeory-image-container border em"><img class="image-max-cover" src="{{ '_gln9403.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 300px, 30vw" option:image="Image 1" loading="lazy" srcset="{{ '_gln9403-p-500.jpg' | asset_url }} 500w, {{ '_gln9403-p-800.jpg' | asset_url }} 800w, {{ '_gln9403-p-1080.jpg' | asset_url }} 1080w, {{ '_gln9403-p-1600.jpg' | asset_url }} 1600w, {{ '_gln9403-p-2000.jpg' | asset_url }} 2000w, {{ '_gln9403-p-2600.jpg' | asset_url }} 2600w, {{ '_gln9403-p-3200.jpg' | asset_url }} 3200w"></div>
-            <div class="categorie-content-wrapper">
-              <h1 option:text="Title 1" class="heading-4 center">CRYSTAL RINGS</h1>
-            </div>
-          </a>
-          <a option:url="page link 2" id="w-node-_1142df18-0201-4fdb-76ce-f463cffa8d60-cffa8d57" href="https://bodhgemandcrystals.com/collections/crystal-rings" class="categorie-link border w-inline-block">
-            <div class="categeory-image-container border em"><img class="image-max-cover" src="{{ '_gln9403.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 300px, 30vw" option:image="Image 2" loading="lazy" srcset="{{ '_gln9403-p-500.jpg' | asset_url }} 500w, {{ '_gln9403-p-800.jpg' | asset_url }} 800w, {{ '_gln9403-p-1080.jpg' | asset_url }} 1080w, {{ '_gln9403-p-1600.jpg' | asset_url }} 1600w, {{ '_gln9403-p-2000.jpg' | asset_url }} 2000w, {{ '_gln9403-p-2600.jpg' | asset_url }} 2600w, {{ '_gln9403-p-3200.jpg' | asset_url }} 3200w"></div>
-            <div class="categorie-content-wrapper">
-              <h1 option:text="Title 2" class="heading-4 center">CRYSTAL RINGS</h1>
-            </div>
-          </a>
-          <a option:url="page link 3" id="w-node-_1142df18-0201-4fdb-76ce-f463cffa8d66-cffa8d57" href="https://bodhgemandcrystals.com/collections/crystal-rings" class="categorie-link border w-inline-block">
-            <div class="categeory-image-container border em"><img class="image-max-cover" src="{{ '_gln9403.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 300px, 30vw" option:image="image 3" loading="lazy" srcset="{{ '_gln9403-p-500.jpg' | asset_url }} 500w, {{ '_gln9403-p-800.jpg' | asset_url }} 800w, {{ '_gln9403-p-1080.jpg' | asset_url }} 1080w, {{ '_gln9403-p-1600.jpg' | asset_url }} 1600w, {{ '_gln9403-p-2000.jpg' | asset_url }} 2000w, {{ '_gln9403-p-2600.jpg' | asset_url }} 2600w, {{ '_gln9403-p-3200.jpg' | asset_url }} 3200w"></div>
-            <div class="categorie-content-wrapper">
-              <h1 option:text="Title 3" class="heading-4 center">CRYSTAL RINGS</h1>
-            </div>
-          </a>
-          <a option:url="page link 4" id="w-node-_1142df18-0201-4fdb-76ce-f463cffa8d6c-cffa8d57" href="https://bodhgemandcrystals.com/collections/crystal-rings" class="categorie-link border w-inline-block">
-            <div class="categeory-image-container border em"><img class="image-max-cover" src="{{ '_gln9403.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 300px, 30vw" option:image="Image 4" loading="lazy" srcset="{{ '_gln9403-p-500.jpg' | asset_url }} 500w, {{ '_gln9403-p-800.jpg' | asset_url }} 800w, {{ '_gln9403-p-1080.jpg' | asset_url }} 1080w, {{ '_gln9403-p-1600.jpg' | asset_url }} 1600w, {{ '_gln9403-p-2000.jpg' | asset_url }} 2000w, {{ '_gln9403-p-2600.jpg' | asset_url }} 2600w, {{ '_gln9403-p-3200.jpg' | asset_url }} 3200w"></div>
-            <div class="categorie-content-wrapper">
-              <h1 option:text="Title 4" class="heading-4 center">CRYSTAL RINGS</h1>
-            </div>
-          </a>
-        </div>
-      </div>
+    <div id="w-node-_499716db-fbd0-f089-0d0c-a43db56d0fb6-6ca7e341" class="container">
+      {%- if settings.collection_festive != blank -%}{%- render "markup_for_collection_festive" -%}{%- else -%}{%- render "products_max_3_where_category_idin_categorybla_blah_2" -%}{%- endif -%}
     </div>
     <div id="w-node-bb779431-539d-87ec-599b-ed5a2720ef75-6ca7e341" class="container auto-margin">
       {%- section 'section-festive-grid' -%}

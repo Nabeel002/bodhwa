@@ -1,0 +1,16 @@
+{% capture listItems %}
+{% for item in collections[settings.collection_gifting].products limit: settings.collection_gifting_limit %}
+<div role="listitem" class="w-dyn-item">
+            <a image-link-1="option:image" id="w-node-_8aac4b61-3744-f1db-7003-ca5eb2ac0bab-6b1f9b4a" href="#" class="link-block-2 w-inline-block"><img loading="lazy" id="w-node-_8aac4b61-3744-f1db-7003-ca5eb2ac0bac-6b1f9b4a" src="{{ item.featured_image | img_url: 'master' }}" alt="{{ item.featured_image.alt }}" class="image-max-cover" data-commerce-type="variation-image" srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w"></a>
+          </div>
+{%- endfor -%}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+<div class="w-dyn-list" udy-collection="product">
+        {%- unless items_length == 0 -%}<div role="list" class="grid-12 w-dyn-items">
+          {{ listItems }}
+        </div>{%- endunless -%}
+        {%- if items_length == 0 -%}<div class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>{%- endif -%}
+      </div>

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "tn21adf70b": "Here to ",
   "t30cf41": "help",
   "t4d54969": "For corporate orders ",
@@ -673,6 +674,8 @@
   "tn53bd9d48": "merul@bodhgemandcrystals.com",
   "tn718ea354": "Phone:",
   "tn78a58de5": "+91 9870127914",
+=======
+>>>>>>> shopify
   "general": {
     "accessibility": {
       "unit_price_separator": "per"

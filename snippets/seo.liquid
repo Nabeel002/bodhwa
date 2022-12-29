@@ -25,7 +25,11 @@
   &ndash; {{ shop.name }}
 {%- endunless -%}
 {%- endcapture -%}
+<<<<<<< HEAD
 <title>{{ seo_title | strip }}{%- if current_tags -%}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{%- endif -%}</title>
+=======
+<title>{{ seo_title | strip }}</title>
+>>>>>>> shopify
 
 {%- if page_description -%}
 <meta name="description" content="{{ page_description | escape }}">
@@ -37,3 +41,9 @@
   {%- if request.page_type == 'article' and settings.enable_article_rich_snippets -%}
     {% render "article-rich-snippets" %}
   {%- endif -%}
+<<<<<<< HEAD
+=======
+{%- if current_tags -%}
+  {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+{%- endif -%}
+>>>>>>> shopify

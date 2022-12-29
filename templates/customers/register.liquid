@@ -4,12 +4,12 @@
   {%- section 'new-nav-pc' -%}
   <div class="account_section wf-section">
     <div class="container center-align w-container"><img src="{{ '60c173e6588eee7c84240625_bodh-black-vector-.png' | asset_url }}" loading="lazy" width="104" alt="Our logo">
-      <h1 class="heading-2 size-3-2em m-top-0-71em m-bottom-20px">{{ 'tn5c16c827' | t }}</h1>
-      <div class="body-font-ra">{{ 'tn79169c33' | t }}</div>
+      <h1 class="heading-2 size-3-2em m-top-0-71em m-bottom-20px">Register Now</h1>
+      <div class="body-font-ra">Please Enter Your Credentials</div>
       <div class="form-block-2 w-form">
         {%- form "create_customer",  class: "" -%}<input type="text" class="form-text-field w-input" maxlength="256" name="customer[first_name]" data-name="first_name" placeholder="first name" id="first_name" required=""><input type="text" class="form-text-field w-input" maxlength="256" name="customer[last_name]" data-name="last_name" placeholder="last name" id="last_name" required=""><input type="email" class="form-text-field w-input" maxlength="256" name="customer[email]" data-name="email" placeholder="email" id="email" required=""><input type="password" class="form-text-field w-input" maxlength="256" name="customer[password]" data-name="password" placeholder="password" id="password" required=""><input type="submit" value="Submit" data-wait="Please wait..." class="primary-button w-button">{%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
         <div class="success-message-2 w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
-          <div class="text-block-21">{{ 'tn63d85b9f' | t }}</div>
+          <div class="text-block-21">Thank you! You have been registered successfully!</div>
         </div>
         {%- unless form_success -%}<div class="error-message w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
           <div class="text-block-20">{%- render "form-errors", form_errors: form_errors -%}</div>

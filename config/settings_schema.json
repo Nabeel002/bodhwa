@@ -4,7 +4,11 @@
     "theme_name": "bodh-shopify-india-v-12",
     "theme_author": "Udesly User",
     "theme_version": "1.0.0",
+<<<<<<< HEAD
     "theme_documentation_url": "https://www.domain.tld",
+=======
+    "theme_documentation_url": "https:\/\/www.domain.tld",
+>>>>>>> shopify
     "theme_support_email": "support@email.com"
   },
   {
@@ -409,12 +413,15 @@
         "id": "color_20532447",
         "label": "Color 20532447",
         "default": "#836a6a"
+<<<<<<< HEAD
       },
       {
         "type": "color",
         "id": "color_n1cd1f9d9",
         "label": "Color n1cd1f9d9",
         "default": "rgba(110, 120, 119, 0.74)"
+=======
+>>>>>>> shopify
       }
     ]
   },
@@ -462,6 +469,37 @@
         "max": 50,
         "step": 1,
         "default": 3
+<<<<<<< HEAD
+=======
+      },
+      {
+        "type": "collection",
+        "id": "collection_gifting",
+        "label": "Collection Gifting"
+      },
+      {
+        "type": "range",
+        "id": "collection_gifting_limit",
+        "label": "Collection Gifting limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_festive",
+        "label": "Collection festive"
+      },
+      {
+        "type": "range",
+        "id": "collection_festive_limit",
+        "label": "Collection festive limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+>>>>>>> shopify
       }
     ]
   }

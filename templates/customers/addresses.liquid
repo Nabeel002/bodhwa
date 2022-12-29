@@ -4,8 +4,8 @@
   <div class="account_section wf-section">
     <div class="container center-align">
       <div class="div-block-26">
-        <div class="address-text">{{ 'tn3cd20c2b' | t }}</div>
-        <a data-w-id="f57d8d2f-d676-1ac3-4dd4-2a54cce5fd30" href="#" class="primary-button m-top-0-52em animation w-button">{{ 'tn7f60818a' | t }}</a>
+        <div class="address-text">YOUR ADDRESSES</div>
+        <a data-w-id="f57d8d2f-d676-1ac3-4dd4-2a54cce5fd30" href="#" class="primary-button m-top-0-52em animation w-button">ADD A NEW ADDRESS</a>
       </div>
       <div class="customer-info">
         <div class="address-text-block">{{ customer.default_address | format_address }}</div>
@@ -15,17 +15,17 @@
         </div>
       </div>
       <div class="address-form w-form">
-        {%- form "customer_address", customer.new_address, class: "new-address-form" -%}<label for="address[phone]">{{ 't65b3d6e' | t }}</label><input type="text" name="address[phone]" class="w-input">
-          <div><label for="first_name-5" class="edit-label">{{ 't69b3163b' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[first_name]" data-name="first_name" placeholder="" id="address_first_name_new" value="{{form.first_name}}"></div>
-          <div><label for="last_name-5" class="edit-label">{{ 'tn1416662b' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[last_name]" data-name="last_name" placeholder="" id="address_last_name_new" value="{{form.last_name}}"></div>
-          <div><label for="company-5" class="edit-label">{{ 'tn64202ba3' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[company]" data-name="company" placeholder="" id="address_company_new" value="{{form.company}}"></div>
-          <div><label for="address" class="edit-label">{{ 'tn61f38f0f' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address1]" data-name="address1" placeholder="" id="address_address1_new" value="{{form.address1}}"></div>
-          <div><label for="address-2" class="edit-label">{{ 'tn61f38f0e' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address2]" data-name="address2" placeholder="" id="address_address2_new" value="{{form.address2}}"></div>
-          <div><label for="city-5" class="edit-label">{{ 't200d8b' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[city]" data-name="city" placeholder="" id="address_city_new" value="{{form.city}}"></div>
-          <div><label for="zip-5" class="edit-label">{{ 't1d721' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[zip]" data-name="zip" placeholder="" id="address_zip_new" value="{{form.zip}}"></div>
-          <div><label for="phone_" class="edit-label">{{ 't65b3d6e' | t }}</label><input type="tel" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="phone_" data-name="Phone 3" placeholder="" id="phone-3"></div>
-          <div><label for="country-5" class="edit-label">{{ 'tn63b0108a' | t }}</label><select id="address_country_new" name="address[country]" data-name="country" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.country}}">{{ all_country_option_tags }}</select></div>
-          <div container="province"><label for="province-5" class="edit-label">{{ 'tn370170b0' | t }}</label><select id="address_province_new" name="address[province]" data-name="province" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.province}}"></select></div><label class="w-checkbox"><input type="checkbox" id="default-3" name="default_" data-name="Default 3" class="w-checkbox-input"><span for="default-3" class="edit-label w-form-label">{{ 't60b0e0a' | t }}</span></label><input type="submit" value="Create New Address" data-wait="Please wait..." class="primary-button m-top-0-52em w-button">
+        {%- form "customer_address", customer.new_address, class: "new-address-form" -%}<label for="address[phone]">phone</label><input type="text" name="address[phone]" class="w-input">
+          <div><label for="first_name-5" class="edit-label">First Name</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[first_name]" data-name="first_name" placeholder="" id="address_first_name_new" value="{{form.first_name}}"></div>
+          <div><label for="last_name-5" class="edit-label">Last Name</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[last_name]" data-name="last_name" placeholder="" id="address_last_name_new" value="{{form.last_name}}"></div>
+          <div><label for="company-5" class="edit-label">Company</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[company]" data-name="company" placeholder="" id="address_company_new" value="{{form.company}}"></div>
+          <div><label for="address" class="edit-label">Address Line 1</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address1]" data-name="address1" placeholder="" id="address_address1_new" value="{{form.address1}}"></div>
+          <div><label for="address-2" class="edit-label">Address Line 2</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address2]" data-name="address2" placeholder="" id="address_address2_new" value="{{form.address2}}"></div>
+          <div><label for="city-5" class="edit-label">City</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[city]" data-name="city" placeholder="" id="address_city_new" value="{{form.city}}"></div>
+          <div><label for="zip-5" class="edit-label">zip</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[zip]" data-name="zip" placeholder="" id="address_zip_new" value="{{form.zip}}"></div>
+          <div><label for="phone_" class="edit-label">phone</label><input type="tel" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="phone_" data-name="Phone 3" placeholder="" id="phone-3"></div>
+          <div><label for="country-5" class="edit-label">Country</label><select id="address_country_new" name="address[country]" data-name="country" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.country}}">{{ all_country_option_tags }}</select></div>
+          <div container="province"><label for="province-5" class="edit-label">Province</label><select id="address_province_new" name="address[province]" data-name="province" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.province}}"></select></div><label class="w-checkbox"><input type="checkbox" id="default-3" name="default_" data-name="Default 3" class="w-checkbox-input"><span for="default-3" class="edit-label w-form-label">Default Address?</span></label><input type="submit" value="Create New Address" data-wait="Please wait..." class="primary-button m-top-0-52em w-button">
         {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}<script>if (Shopify) {
 
 var hideElementId = 'address_province_new';
@@ -43,7 +43,7 @@ new Shopify.CountryProvinceSelector(
 );
 }</script>{%- endform -%}
         <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
-          <div>{{ 't5a0ea5a1' | t }}</div>
+          <div>Thank you! Your submission has been received!</div>
         </div>
         {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
           <div>{%- render "form-errors", form_errors: form_errors -%}</div>
@@ -51,16 +51,16 @@ new Shopify.CountryProvinceSelector(
       </div>
       {%- for address in customer.addresses -%}<div class="edit-address-form w-form">
         {%- form "customer_address", address, class: "edit-address" -%}
-          <div id="w-node-_4097c53e-17b0-5c49-33db-3ad7f1352a28-63977fb0"><label for="first_name-4" class="edit-label">{{ 't69b3163b' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[first_name]" data-name="first_name" placeholder="" id="address_first_name_{{form.id}}" value="{{form.first_name}}"></div>
-          <div><label for="last_name-4" class="edit-label">{{ 'tn1416662b' | t }}</label><input type="text" class="form-text-field w-input" maxlength="256" name="address[last_name]" data-name="last_name" placeholder="" id="address_last_name_{{form.id}}" value="{{form.last_name}}"></div>
-          <div><label for="company-4" class="edit-label">{{ 'tn64202ba3' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[company]" data-name="company" placeholder="" id="address_company_{{form.id}}" value="{{form.company}}"></div>
-          <div><label for="address-4" class="edit-label">{{ 'tn61f38f0f' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address1]" data-name="address1" placeholder="" id="address_address1_{{form.id}}" value="{{form.address1}}"></div>
-          <div><label for="address-2" class="edit-label">{{ 'tn61f38f0e' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address2]" data-name="address2" placeholder="" id="address_address2_{{form.id}}" value="{{form.address2}}"></div>
-          <div><label for="city-4" class="edit-label">{{ 't200d8b' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[city]" data-name="city" placeholder="" id="address_city_{{form.id}}" value="{{form.city}}"></div>
-          <div><label for="zip-4" class="edit-label">{{ 't1d721' | t }}</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[zip]" data-name="zip" placeholder="" id="address_zip_{{form.id}}" value="{{form.zip}}"></div>
-          <div><label for="phone-4" class="edit-label">{{ 't65b3d6e' | t }}</label><input type="tel" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[phone]" data-name="phone" placeholder="" id="address_phone_{{form.id}}" value="{{form.phone}}"></div>
-          <div><label for="country-4" class="edit-label">{{ 'tn63b0108a' | t }}</label><select id="address_country_{{form.id}}" name="address[country]" data-name="country" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.country}}">{{ all_country_option_tags }}</select></div>
-          <div container="province"><label for="province-4" class="edit-label">{{ 'tn370170b0' | t }}</label><select id="address_province_{{form.id}}" name="address[province]" data-name="province" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.province}}"></select></div><label class="w-checkbox"><input type="checkbox" id="default-2" name="default_" data-name="Default 2" class="w-checkbox-input"><span for="default-2" class="checkbox-label-3 w-form-label">{{ 't60b0e0a' | t }}</span></label>
+          <div id="w-node-_4097c53e-17b0-5c49-33db-3ad7f1352a28-63977fb0"><label for="first_name-4" class="edit-label">First Name</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[first_name]" data-name="first_name" placeholder="" id="address_first_name_{{form.id}}" value="{{form.first_name}}"></div>
+          <div><label for="last_name-4" class="edit-label">Last Name</label><input type="text" class="form-text-field w-input" maxlength="256" name="address[last_name]" data-name="last_name" placeholder="" id="address_last_name_{{form.id}}" value="{{form.last_name}}"></div>
+          <div><label for="company-4" class="edit-label">Company</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[company]" data-name="company" placeholder="" id="address_company_{{form.id}}" value="{{form.company}}"></div>
+          <div><label for="address-4" class="edit-label">Address Line 1</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address1]" data-name="address1" placeholder="" id="address_address1_{{form.id}}" value="{{form.address1}}"></div>
+          <div><label for="address-2" class="edit-label">Address Line 2</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[address2]" data-name="address2" placeholder="" id="address_address2_{{form.id}}" value="{{form.address2}}"></div>
+          <div><label for="city-4" class="edit-label">City</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[city]" data-name="city" placeholder="" id="address_city_{{form.id}}" value="{{form.city}}"></div>
+          <div><label for="zip-4" class="edit-label">zip</label><input type="text" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[zip]" data-name="zip" placeholder="" id="address_zip_{{form.id}}" value="{{form.zip}}"></div>
+          <div><label for="phone-4" class="edit-label">phone</label><input type="tel" class="form-text-field i-field-text-s-1-42em border-remover w-input" maxlength="256" name="address[phone]" data-name="phone" placeholder="" id="address_phone_{{form.id}}" value="{{form.phone}}"></div>
+          <div><label for="country-4" class="edit-label">Country</label><select id="address_country_{{form.id}}" name="address[country]" data-name="country" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.country}}">{{ all_country_option_tags }}</select></div>
+          <div container="province"><label for="province-4" class="edit-label">Province</label><select id="address_province_{{form.id}}" name="address[province]" data-name="province" class="form-text-field i-field-text-s-1-42em border-remover w-select" data-default="{{form.province}}"></select></div><label class="w-checkbox"><input type="checkbox" id="default-2" name="default_" data-name="Default 2" class="w-checkbox-input"><span for="default-2" class="checkbox-label-3 w-form-label">Default Address?</span></label>
           <div class="div-block"></div><input type="submit" value="Edit Address" data-wait="Please wait..." class="primary-button w-button">
           <div><input type="submit" value="DELETE ADDRESS" data-wait="Please wait..." button="delete" class="btn-danger w-button"></div>
         {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}<script>if (Shopify) {
@@ -105,7 +105,7 @@ document.querySelectorAll('#address_form_{{form.id}} [button="delete"]').forEach
 
 }</script>{%- endform -%}
         <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
-          <div>{{ 't5a0ea5a1' | t }}</div>
+          <div>Thank you! Your submission has been received!</div>
         </div>
         {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
           <div>{%- render "form-errors", form_errors: form_errors -%}</div>

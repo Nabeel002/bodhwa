@@ -6,15 +6,28 @@
                 <a href="{{ item.url | within: collection }}" class="categorie-link w-inline-block">
                   <div class="product-card-wrapper">
                     <div item="sold-out" class="product-image-wrapper"><img src="{{ item.featured_image | img_url: 'master' }}" loading="lazy" alt="{{ item.title }}" class="image-max-cover" data-commerce-type="variation-image" srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w">
+<<<<<<< HEAD
                       <div class="coming-soon sale">On Sale</div>
                       <div class="out-of-stock-state">
                         <div class="coming-soon out-of-stock">SOLD OUT</div>
                       </div>
+=======
+                       {%- if item.compare_at_price_max > item.price -%}<div class="coming-soon sale">On Sale</div>{%- endif -%}
+                      {% unless item.available %}
+                      <div class="out-of-stock-state">
+                        <div class="coming-soon out-of-stock">SOLD OUT</div>
+                      </div>'
+                      {%- endunless -%}
+>>>>>>> shopify
                     </div>
                     <div class="product-content-wrapper remove-bg">
                       <h4 class="product-card-heading-copy">{{ item.title }}</h4>
                       <div class="product-price-holder">
+<<<<<<< HEAD
                         <div data-commerce-type="variation-price" class="product-card-price-collection">{{ item.price | money }}</div>
+=======
+                        <div data-commerce-type="variation-price" class="product-card-price">{{ item.price | money }}</div>
+>>>>>>> shopify
                         <div class="product-card-price compare-price" data-commerce-type="variation-compare_at_price">{{ item.selected_or_first_available_variant.compare_at_price | money }}</div>
                       </div>
                     </div>
@@ -39,7 +52,11 @@
                 <div class="w-inline-block">Previous</div>
               </a>{%- endif -%}
               {%- if pagination.next.is_link -%}<a href="{{ pagination.next.url }}" aria-label="Next Page" class="w-pagination-next load-more-button">
+<<<<<<< HEAD
                 <div class="w-inline-block">See More</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+=======
+              <div class="w-inline-block resizer" style="cursor:pointer;"><p>See More</p></div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+>>>>>>> shopify
                   <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path>
                 </svg>
               </a>{%- endif -%}

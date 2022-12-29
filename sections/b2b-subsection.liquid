@@ -1,7 +1,12 @@
 
     <div class="grid-wrapper">
+<<<<<<< HEAD
       <div class="_2-col-grid"><img src="{{ 'blog-header-image-2.png' | asset_url }}" loading="lazy" id="w-node-f8b93077-40a5-a7a9-f190-c312980468fc-396d0257" sizes="(max-width: 479px) 100vw, (max-width: 991px) 29vw, 100vw" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w" alt="">
         <h1 id="w-node-_90c6013d-a5da-d3ba-ee9a-60a494b189a7-396d0257" class="heading-2 right-centred left-centered _3-5em">{{ section.settings.subsection_heading }}</h1>
+=======
+      <div class="_2-col-grid">
+        <h1 id="w-node-fe4faf99-2954-6411-d510-850f396d025a-396d0257" class="heading-2 right-centred mr-3">{{ section.settings.subection_heading_2 }}</h1>{%- if section.settings.subection_image_2 == nil -%}<img class="image-max-cover" src="{{ 'blog-header-image-2.png' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 34vw, 100vw" id="w-node-fe4faf99-2954-6411-d510-850f396d025e-396d0257" loading="lazy" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.subection_image_2.src | img_url: 'master' }}" alt="{{ section.settings.subection_image_2.alt | escape }}" id="w-node-fe4faf99-2954-6411-d510-850f396d025e-396d0257" loading="lazy" srcset="{{ section.settings.subection_image_2 | img_url: '1920x' }} 1920w,{{ section.settings.subection_image_2 | img_url: '1600x' }} 1600w,{{ section.settings.subection_image_2 | img_url: '1366x' }} 1366w,{{ section.settings.subection_image_2 | img_url: '1024x' }} 1024w,{{ section.settings.subection_image_2 | img_url: '768x' }} 768w,{{ section.settings.subection_image_2 | img_url: '640x' }} 640w">{%- endif -%}
+>>>>>>> shopify
       </div>
     </div>
   
@@ -16,9 +21,20 @@
   "settings": [
     {
       "type": "text",
+<<<<<<< HEAD
       "id": "subsection_heading",
       "label": "subsection-heading",
       "default": "ForEmployees"
+=======
+      "id": "subection_heading_2",
+      "label": "subection-heading-2",
+      "default": "ForEmployees"
+    },
+    {
+      "type": "image_picker",
+      "id": "subection_image_2",
+      "label": "subection-image-2"
+>>>>>>> shopify
     }
   ]
 }

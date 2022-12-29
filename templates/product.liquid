@@ -3,6 +3,26 @@
   {%- render 'global-css-and-elements' -%}
   {%- section 'announcement-ribbon' -%}
   {%- section 'new-nav-pc' -%}
+<style type="text/css">
+
+  @media screen and (max-width:650px){
+
+    .product-card-price {
+    padding-left: 5px;
+    font-size:4em;
+  
+  }
+  }
+    @media only screen and (min-width: 680px) {
+        .product-price-holder { font-size:2em; }
+    }
+
+  .product-section{
+    font-size:0.8vw;
+  }
+
+  
+</style>
   <section class="product-section">
     <div class="container">
       <div class="w-layout-grid product-grid">
@@ -19,7 +39,7 @@
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if setItems.size == 0 -%}<div class="empty-state w-dyn-empty">
-              <div>{{ 't3d503d2b' | t }}</div>
+              <div>No items found.</div>
             </div>{%- endif -%}
           <template><div class="product-list-wrapper w-dyn-list" udesly-repeater="true" data-commerce-type="more-images">
             <div role="list" class="collection-list-8 w-dyn-items">
@@ -41,7 +61,7 @@
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if setItems.size == 0 -%}<div class="empty-state w-dyn-empty">
-              <div>{{ 't3d503d2b' | t }}</div>
+              <div>No items found.</div>
             </div>{%- endif -%}
           </div>{%- endif -%}
         </div>
@@ -54,43 +74,46 @@
             </div>
           </div>
           <div>
-            {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform" -%}{%- unless product.has_only_default_variant or product.variants.size == 1 -%}<div data-node-type="add-to-cart-option-list" position-id="4a844da5-02c6-7e52-b953-f67102a750af">{%- for option in product.options_with_values -%}<fieldset data-node-type="add-to-cart-option" style="{% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}"><label data-node-type="add-to-cart-option-label">{{ option.name }}</label><select data-node-type="add-to-cart-option-select" class="select-field w-select" style="display: none;" name="{{ "option" | append: forloop.index }}">{%- render "product-options", option: option -%}</select><div data-node-type="add-to-cart-option-pill-group" class="w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">{%- for value in option.values -%}<div data-node-type="add-to-cart-option-pill" class="w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}"><div data-node-type="block">{{ value }}</div></div>{%- endfor -%}</div></fieldset>{%- endfor -%}</div>{%- endunless -%}{%- assign condition_value = product.type | strip -%}{%- unless condition_value == "e348fd487d0102946c9179d2a94bb613" -%}<label for="quantity-94cb9854a53b1d1bbc3bc2ce631bb217" position-id="4a844da5-02c6-7e52-b953-f67102a750b6">{{ 'tn48bd3755' | t }}</label>{%- endunless -%}{%- assign condition_value = product.type | strip -%}{%- unless condition_value == "e348fd487d0102946c9179d2a94bb613" -%}<input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity-94cb9854a53b1d1bbc3bc2ce631bb217" name="quantity" min="1" position-id="4a844da5-02c6-7e52-b953-f67102a750b8" class="w-commerce-commerceaddtocartquantityinput quantity" value="1">{%- endunless -%}<input type="submit" data-loading-text="Adding to cart..." data-node-type="commerce-add-to-cart-button" class="w-commerce-commerceaddtocartbutton primary-button center-align" value="Add to Cart" aria-haspopup="dialog" aria-busy="false" position-id="4a844da5-02c6-7e52-b953-f67102a750b9">
-              <a position-id="4a844da5-02c6-7e52-b953-f67102a750ba" data-node-type="commerce-buy-now-button" data-default-text="Buy now" data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false" class="w-commerce-commercebuynowbutton primary-button buy-now" href="/checkout">{{ 't71bb9a1c' | t }}</a>
+            {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform" -%}{%- unless product.has_only_default_variant or product.variants.size == 1 -%}<div data-node-type="add-to-cart-option-list" id="" position-id="4a844da5-02c6-7e52-b953-f67102a750af">{%- for option in product.options_with_values -%}<fieldset data-node-type="add-to-cart-option" id="" style="{% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}"><label data-node-type="add-to-cart-option-label">{{ option.name }}</label><select data-node-type="add-to-cart-option-select" class="select-field w-select" id="" style="display: none;" name="{{ "option" | append: forloop.index }}">{%- render "product-options", option: option -%}</select><div data-node-type="add-to-cart-option-pill-group" id="" class="w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">{%- for value in option.values -%}<div data-node-type="add-to-cart-option-pill" id="" class="w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}"><div data-node-type="block" id="">{{ value }}</div></div>{%- endfor -%}</div></fieldset>{%- endfor -%}</div>{%- endunless -%}{%- assign condition_value = product.type | strip -%}{%- unless condition_value == "e348fd487d0102946c9179d2a94bb613" -%}<label for="quantity-94cb9854a53b1d1bbc3bc2ce631bb217" position-id="4a844da5-02c6-7e52-b953-f67102a750b6" class="quantity-labelssss">Quantity</label>{%- endunless -%}{%- assign condition_value = product.type | strip -%}{%- unless condition_value == "e348fd487d0102946c9179d2a94bb613" -%}<input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity-94cb9854a53b1d1bbc3bc2ce631bb217" name="quantity" min="1" position-id="4a844da5-02c6-7e52-b953-f67102a750b8" class="w-commerce-commerceaddtocartquantityinput quantity" value="1">{%- endunless -%}<input type="submit" position-id="4a844da5-02c6-7e52-b953-f67102a750b9" data-node-type="commerce-add-to-cart-button" data-loading-text="Adding to cart..." value="Add to Cart" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton primary-button center-align">
+              <a data-node-type="commerce-buy-now-button" data-default-text="Buy now" data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false" class="w-commerce-commercebuynowbutton primary-button buy-now" href="/checkout">Buy now</a>
             {%- render "product-variants-data" product: product -%}{%- endform -%}
             <div tabindex="0" style="display:none" class="w-commerce-commerceaddtocartoutofstock">
-              <div>{{ 't7aaa2dac' | t }}</div>
+              <div>This product is out of stock.</div>
             </div>
             <div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
-              <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">{{ 'tn1c765d0d' | t }}</div>
+              <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">Product is not available in this quantity.</div>
             </div>
           </div>
           <div class="info-graphic-grid">
             <div id="w-node-_261da65f-9836-504f-f535-1f31f7fe4682-1bb1a618" class="diamond-animation" data-w-id="261da65f-9836-504f-f535-1f31f7fe4682" data-animation-type="lottie" data-src="{{ 'lf30_editor_0zrhoxoo.json' | asset_url }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5" data-duration="0"></div>
             <div id="w-node-_70560efa-5d7e-adc2-1255-927963a9acc2-1bb1a618" class="sparkle-animation" data-w-id="70560efa-5d7e-adc2-1255-927963a9acc2" data-animation-type="lottie" data-src="{{ 'lf20_wqfuqg.json' | asset_url }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0"></div>
             <div id="w-node-a1675f17-2470-4475-8725-c7ba7d746bdc-1bb1a618" class="shipping-animation" data-w-id="a1675f17-2470-4475-8725-c7ba7d746bdc" data-animation-type="lottie" data-src="{{ 'lf20_fxhtqf.json' | asset_url }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
-            <div id="w-node-cc7cc009-298c-5138-9b1a-ef564146ff67-1bb1a618" class="info-content-holder">{{ 't125e7c73' | t }}</div>
-            <div class="info-content-holder padding">{{ 'tn34a18199' | t }}<br>
-              <a href="{{ pages["about-us"].url }}" target="_blank" class="underline-link">{{ 'tn2d19665' | t }}</a>
+            <div id="w-node-cc7cc009-298c-5138-9b1a-ef564146ff67-1bb1a618" class="info-content-holder">Authentic Crystal</div>
+            <div class="info-content-holder padding">Charged by<br>
+              <a href="{{ pages["about-us"].url }}" target="_blank" class="underline-link">Mrs. Monica</a>
             </div>
-            <div id="w-node-cde761c2-f12a-a064-5701-774fb3922a8c-1bb1a618" class="info-content-holder">{{ 't77a21f8e' | t }}</div>
+            <div id="w-node-cde761c2-f12a-a064-5701-774fb3922a8c-1bb1a618" class="info-content-holder">Ships Tomorrow</div>
           </div>
           <div class="accordian-wrapper">
             <div class="accordian-item bottom-padding-2-49">
               <div class="accordian-item-trigger">
-                <h3 class="heading-4-caps bottom-padding-10px">{{ 'tn360d424' | t }}</h3>
+                <h3 class="heading-4-caps bottom-padding-10px">Description</h3>
               </div>
               <div class="accordian-item-content-copy">
                 <div class="product-description">
-                  <p>{{ product.metafields.udesly['description'] }}</p>
+                  <p>{{ product.description }}</p>
                 </div>
+                <br>
+                                <div class="addthis_inline_share_toolbox"></div>
+
               </div>
             </div>
             <div class="accordian-item">
               <div data-w-id="00814ebc-c134-91f5-ddb2-1d38f34acd4f" class="accordian-item-trigger">
-                <h3 class="heading-4-caps">{{ 'tn3be603a2' | t }}</h3><img src="{{ 'arrow.svg' | asset_url }}" loading="lazy" width="20" height="25" alt="" class="down-arrow new-size">
+                <h3 class="heading-4-caps">covid guidelines</h3><img src="{{ 'arrow.svg' | asset_url }}" loading="lazy" width="20" height="25" alt="" class="down-arrow new-size">
               </div>
               <div style="height:0px;display:none" class="accordian-item-content">
-                <p class="product-description">{{ 'tn82759e1' | t }}<br>{{ 'tn31814dae' | t }}<br>{{ 't200d' | t }}<br>{{ 't70345577' | t }}<a href="tel:+919331789173" class="underline-link">{{ 'tn9720cf' | t }}</a>{{ 't36ba77fd' | t }}<a href="mailto:support@bodhgemandcrystal.com" class="underline-link">{{ 't72354f1a' | t }}</a>
+                <p class="product-description">At BODH, we care for your safety and for all our employees. We're ensuring that all necessary safety measures are being taken to ensure safe delivery! All employees undergo a compulsory temperature check every day and are wearing marks and gloves all the time to prevent any package contamination. All packages and boxes are disinfected before departure. The orders are usually processed and shipped within 1-2 business days after the order is placed. We try our best to deliver your order at the earliest, but due to the lockdown restrictions deliveries are taking longer than usual.<br>We appreciate your understanding and we try our best to deliver your order as soon as possible.<br>‍<br>For further questions or concerns, please contact us on <a href="tel:+919331789173" class="underline-link">+919321789173</a> or write us on <a href="mailto:support@bodhgemandcrystal.com" class="underline-link">support@bodhgemandcrystals.com</a>
                 </p>
               </div>
             </div>
@@ -99,11 +122,12 @@
       </div>
     </div>
   </section>
+  <div id="bundle-product_reviews"></div>
   <section class="recommended-product-section">
     <div class="container center-align">
-      <h2 class="heading-2 m-bottom-20px">{{ 'tn4d95df2c' | t }}</h2>
+      <h2 class="heading-2 m-bottom-20px">You May Also Like</h2>
       <div class="w-dyn-list" shopify-recommended="{{ product.id }}"><div role="list" class="related-product-grid w-dyn-items"></div><div class="w-dyn-empty" style="display: none;">
-          <div>{{ 't3d503d2b' | t }}</div>
+          <div>No items found.</div>
         </div></div>
     </div>
   </section>

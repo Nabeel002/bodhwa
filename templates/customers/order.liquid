@@ -6,17 +6,17 @@
       <div class="w-commerce-commercelayoutmain">
         <div class="w-commerce-commercecheckoutcustomerinfosummarywrapper">
           <div class="w-commerce-commercecheckoutsummaryblockheader">
-            <h4 class="heading-3">{{ 'tn54cb6016' | t }}</h4>
+            <h4 class="heading-3">Customer Information</h4>
           </div>
           <fieldset class="w-commerce-commercecheckoutblockcontent">
             <div class="w-commerce-commercecheckoutrow">
               <div class="w-commerce-commercecheckoutcolumn">
-                <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel heading-3">{{ 't3ff5b7c' | t }}</label>
+                <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel heading-3">Email</label>
                   <div class="heading-4">{{ order.email }}</div>
                 </div>
               </div>
               {%- assign condition_value = order.shipping_methods.size | strip -%}{%- if condition_value == "true" -%}<div class="w-commerce-commercecheckoutcolumn">
-                <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel heading-3">{{ 'tn35b49c7e' | t }}</label>
+                <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel heading-3">Shipping Address</label>
                   <div class="heading-4">{{ order.shipping_address.name }}</div>
                   <div class="heading-4">{{ order.shipping_address.address1 }}</div>
                   <div class="heading-4">{{ order.shipping_address.address2 }}</div>
@@ -33,7 +33,7 @@
         </div>
         {%- assign condition_value = order.shipping_methods.size | strip -%}{%- if condition_value == "true" -%}<div class="w-commerce-commercecheckoutshippingsummarywrapper">
           <div class="w-commerce-commercecheckoutsummaryblockheader">
-            <h4 class="heading-3">{{ 't12d3df93' | t }}</h4>
+            <h4 class="heading-3">Shipping Method</h4>
           </div>
           <fieldset class="w-commerce-commercecheckoutblockcontent block-content">
             <div class="w-commerce-commercecheckoutrow">
@@ -48,26 +48,26 @@
         </div>{%- endif -%}
         <div class="w-commerce-commercecheckoutpaymentsummarywrapper">
           <div class="w-commerce-commercecheckoutsummaryblockheader">
-            <h4 class="heading-3">{{ 'tn175ec138' | t }}</h4>
+            <h4 class="heading-3">Payment Info</h4>
           </div>
         </div>
         <fieldset class="w-commerce-commercecheckoutblockcontent">
           <div class="w-commerce-commercecheckoutrow">
             <div class="w-commerce-commercecheckoutcolumn">
-              <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel">{{ 'tn175ec138' | t }}</label>
+              <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel">Payment Info</label>
                 <div class="w-commerce-commercecheckoutsummaryflexboxdiv">
                   <div class="w-commerce-commercecheckoutsummarytextspacingondiv heading-4">{{ order.transactions[0].payment_details.credit_card_company }}</div>
                   <div class="w-commerce-commercecheckoutsummarytextspacingondiv heading-4">{{ order.transactions[0].payment_details.credit_card_number }}</div>
                 </div>
                 <div class="w-commerce-commercecheckoutsummaryflexboxdiv">
                   
-                  {%- if order. -%}<div class="heading-4">{{ 't7df1' | t }}</div>{%- endif -%}
+                  {%- if order. -%}<div class="heading-4"> / </div>{%- endif -%}
                   
                 </div>
               </div>
             </div>
             <div class="w-commerce-commercecheckoutcolumn">
-              <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel heading-4">{{ 't789bff0f' | t }}</label>
+              <div class="w-commerce-commercecheckoutsummaryitem"><label class="w-commerce-commercecheckoutsummarylabel heading-4">Billing Address</label>
                 <div class="heading-4">{{ order.billing_address.name }}</div>
                 <div class="heading-4">{{ order.billing_address.address1 }}</div>
                 <div class="heading-4">{{ order.billing_address.address2 }}</div>
@@ -83,10 +83,10 @@
         </fieldset>
         <div class="w-commerce-commercecheckoutorderitemswrapper">
           <div class="w-commerce-commercecheckoutsummaryblockheader block-header">
-            <h4 class="heading-6">{{ 'tn3eedfb0d' | t }}</h4>
+            <h4 class="heading-6">Items in Order</h4>
           </div>
           <fieldset class="w-commerce-commercecheckoutblockcontent">
-            <script type="text/x-wf-template" id="wf-template-6155460ad9695a160a923a8e000000000051"><div data-node-type="checkout-order-item" id="" class="w-commerce-commercecheckoutorderitem"><img data-node-type="cart-item-image" template-part-bind="6155460ad9695a160a923a8e000000000053" class="w-commerce-commercecartitemimage" src="<%= it.image %>"><div data-node-type="checkout-order-item-description-wrapper" id="" class="w-commerce-commercecheckoutorderitemdescriptionwrapper"><div data-node-type="cart-product-name" class="heading-4 w-commerce-commercecartproductname" template-part-bind="6155460ad9695a160a923a8e000000000055"><%= it.title %></div><div data-node-type="checkout-order-item-quantity-wrapper" id="" class="w-commerce-commercecheckoutorderitemquantitywrapper"><div class="text-block-11" id="">Quantity: </div><div id="" template-part-bind="6155460ad9695a160a923a8e000000000059"><%= it.quantity %></div></div><ul data-node-type="checkout-order-item-option-list" id="" class="w-commerce-commercecheckoutoptionlist"><% Object.entries(it.properties).forEach( data =>  { %><li data-node-type="checkout-order-item-option-list-item" class="option-2" id=""><span data-node-type="checkout-order-item-option-list-item-label"><%= data[0] %></span><span id="">: </span><span data-node-type="checkout-order-item-option-list-item-value"><%= data[1] %></span></li><% }) %></ul></div><div class="heading-4" id="" template-part-bind="6155460ad9695a160a923a8e000000000060"><%= it.rowTotal %></div></div></script>
+            <script type="text/x-wf-template" id="wf-template-6155460ad9695a160a923a8e000000000051"><div data-node-type="checkout-order-item" id="" class="w-commerce-commercecheckoutorderitem"><img data-node-type="cart-item-image" template-part-bind="6155460ad9695a160a923a8e000000000053" class="w-commerce-commercecartitemimage" src="<%= it.image %>"><div data-node-type="checkout-order-item-description-wrapper" id="" class="w-commerce-commercecheckoutorderitemdescriptionwrapper"><div data-node-type="cart-product-name" class="heading-4 w-commerce-commercecartproductname" template-part-bind="6155460ad9695a160a923a8e000000000055"><%= it.title %></div><div data-node-type="checkout-order-item-quantity-wrapper" id="" class="w-commerce-commercecheckoutorderitemquantitywrapper"><div class="text-block-11" id="">Quantity: </div><div id="" template-part-bind="6155460ad9695a160a923a8e000000000059"><%= it.count %></div></div><ul data-node-type="checkout-order-item-option-list" id="" class="w-commerce-commercecheckoutoptionlist"><% Object.entries(it.properties).forEach( data =>  { %><li data-node-type="checkout-order-item-option-list-item" class="option-2" id=""><span data-node-type="checkout-order-item-option-list-item-label"><%= data[0] %></span><span id="">: </span><span data-node-type="checkout-order-item-option-list-item-value"><%= data[1] %></span></li><% }) %></ul></div><div class="heading-4" id="" template-part-bind="6155460ad9695a160a923a8e000000000060"><%= it.rowTotal %></div></div></script>
             <div role="list" class="w-commerce-commercecheckoutorderitemslist" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-6155460ad9695a160a923a8e000000000051">{%- render 'order-items' -%}</div>
           </fieldset>
         </div>
@@ -94,17 +94,17 @@
       <div class="w-commerce-commercelayoutsidebar">
         <div class="w-commerce-commercecheckoutordersummarywrapper">
           <div class="w-commerce-commercecheckoutsummaryblockheader">
-            <h4 class="heading-3">{{ 'tn77079b6c' | t }}</h4>
+            <h4 class="heading-3">Order Summary</h4>
           </div>
           <fieldset class="w-commerce-commercecheckoutblockcontent">
             <div class="w-commerce-commercecheckoutsummarylineitem">
-              <div class="text-block-12">{{ 'tn76f396dc' | t }}</div>
+              <div class="text-block-12">Subtotal</div>
               <div class="text-block-13">{{ order.subtotal_price | money }}</div>
             </div>
             <script type="text/x-wf-template" id="wf-template-6155460ad9695a160a923a8e00000000006b">%3Cdiv%20class%3D%22w-commerce-commercecheckoutordersummaryextraitemslistitem%22%3E%3Cdiv%20bind%3D%226155460ad9695a160a923a8e00000000006d%22%20class%3D%22text-block-14%22%3E%3C%2Fdiv%3E%3Cdiv%20bind%3D%226155460ad9695a160a923a8e00000000006e%22%20class%3D%22text-block-15%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E</script>
             <div class="w-commerce-commercecheckoutordersummaryextraitemslist" data-wf-collection="database.commerceOrder.extraItems" data-wf-template-id="wf-template-6155460ad9695a160a923a8e00000000006b">{%- for tax_line in order.tax_lines -%}<div class="w-commerce-commercecheckoutordersummaryextraitemslistitem"><div class="text-block-14">{{ tax_line.title }} ({{ tax_line.rate | times: 100 }}%): </div><div class="text-block-15">{{ tax_line.price | money }}</div></div>{%- endfor -%}</div>
             <div class="w-commerce-commercecheckoutsummarylineitem">
-              <div class="text-block-16">{{ 't4d3eb24' | t }}</div>
+              <div class="text-block-16">Total</div>
               <div class="w-commerce-commercecheckoutsummarytotal heading-4-caps">{{ order.total_price | money }}</div>
             </div>
           </fieldset>
