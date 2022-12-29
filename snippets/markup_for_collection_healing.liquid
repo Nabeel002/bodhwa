@@ -1,0 +1,20 @@
+{% capture listItems %}
+{% for item in collections[settings.collection_healing].products limit: settings.collection_healing_limit %}
+<div role="listitem" class="w-dyn-item">
+              <a option:url="offer 4 link" href="{{ item.url | within: collection }}" class="card-offer w-inline-block">
+                <div class="card-offer-image-wrapper"><img loading="lazy" option:image="product image 4" src="{{ item.featured_image | img_url: 'master' }}" alt="{{ item.featured_image.alt }}" class="image-max-cover" data-commerce-type="variation-image" srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w"></div>
+                <h1 option:text="heading product 4" class="product-card-heading">{{ item.title }}</h1>
+                <div data-commerce-type="variation-price" option:text="price product 4" class="product-card-price">{{ item.price | money }}</div>
+              </a>
+            </div>
+{%- endfor -%}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+<div class="w-dyn-list" udy-collection="product">
+          {%- unless items_length == 0 -%}<div role="list" class="collection-list-7 w-dyn-items">
+            {{ listItems }}
+          </div>{%- endunless -%}
+          {%- if items_length == 0 -%}<div class="w-dyn-empty">
+            <div>No items found.</div>
+          </div>{%- endif -%}
+        </div>

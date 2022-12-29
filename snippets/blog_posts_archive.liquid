@@ -1,0 +1,23 @@
+{% capture listItems %}  
+                        {% for item in blogs['post'].articles %}
+                        <div role="listitem" class="w-dyn-item">
+            <a href="{{ item.url }}" class="w-inline-block">
+              <div class="blog-image-holder"><img loading="lazy" width="375" src="{{ item.image | img_url: 'master' }}" alt="{{ item.image.alt }}" class="image-max-cover" srcset="{{ item.image | img_url: '1920x' }} 1920w,{{ item.image | img_url: '1600x' }} 1600w,{{ item.image | img_url: '1366x' }} 1366w,{{ item.image | img_url: '1024x' }} 1024w,{{ item.image | img_url: '768x' }} 768w,{{ item.image | img_url: '640x' }} 640w"></div>
+              <div class="blog-content-wrapper">
+                <h1 class="heading-3 font-weight-500">{{ item.title }}</h1>
+                <div class="body-font m-bottom-1-11em m-top-0-83em s-1-42em">{{ item.excerpt }}</div>
+                <div class="body-font s-1-42">{{ item.created_at | date: "%B %e, %Y" }}</div>
+              </div>
+            </a>
+          </div>
+                        {% endfor %}
+                        {% endcapture %}
+{% assign items_length = listItems | strip | size %}
+    <div class="w-dyn-list" udy-collection="post">
+        {%- unless items_length == 0 -%}<div role="list" class="collection-list-2 w-dyn-items">
+          {{ listItems }}
+        </div>{%- endunless -%}
+        {%- if items_length == 0 -%}<div class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>{%- endif -%}
+      </div>

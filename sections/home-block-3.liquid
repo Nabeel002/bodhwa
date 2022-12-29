@@ -1,0 +1,32 @@
+<a option:url="link 3" href="{{ pages["home-decor"].url }}" class="crysta-link w-inline-block">
+          <div class="crystal-image-wrapper">{%- if section.settings.main_image == nil -%}<img src="{{ 'home-decor-image.jpg' | asset_url }}" loading="lazy" height="" width="842" alt="" class="image-max-cover">{%- else -%}<img src="{{ section.settings.main_image.src | img_url: 'master' }}" loading="lazy" height="" width="842" alt="{{ section.settings.main_image.alt | escape }}" class="image-max-cover" srcset="{{ section.settings.main_image | img_url: '1920x' }} 1920w,{{ section.settings.main_image | img_url: '1600x' }} 1600w,{{ section.settings.main_image | img_url: '1366x' }} 1366w,{{ section.settings.main_image | img_url: '1024x' }} 1024w,{{ section.settings.main_image | img_url: '768x' }} 768w,{{ section.settings.main_image | img_url: '640x' }} 640w">{%- endif -%}</div>
+          <div class="crystal-content-wrapper">
+            <div class="crystal-call-to-action">{{ section.settings.short_description }}</div>
+            <div class="crystal-title">HOME DECOR</div>
+          </div>
+        </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "home-block-3",
+  "tag": "div",
+  "class": "crysta-link w-inline-block",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "short_description",
+      "label": "short description",
+      "default": "Shop By"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "main image"
+    }
+  ]
+}
+{% endschema %}

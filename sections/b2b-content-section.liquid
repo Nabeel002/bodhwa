@@ -1,0 +1,28 @@
+
+    <h1 class="heading-1 center-text _500-medium-w">{{ section.settings.head }}</h1>
+    <p class="paragraph-gifting m-auto">{{ section.settings.paragraph }}</p>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-content-section",
+  "tag": "div",
+  "class": "section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "head",
+      "label": "head",
+      "default": "A Little About Our Gifting Service"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "paragraph",
+      "default": "Crystals have taken birth in various shapes and sizes and as magnificent as they are to look at, each crystal-shape holds a definite value, the correct use of which has brought us this far in our lives and will take us even further, once we know the meaning and significance of each. Crystals have never known to be harmful to any species on this planet. Once you set your intentions behind choosing a particular crystal, it tends to form a relationship with your inner being and works in harmony with your emotions – always guiding them towards the correct path."
+    }
+  ]
+}
+{% endschema %}

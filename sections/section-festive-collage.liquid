@@ -1,0 +1,43 @@
+
+      <div id="w-node-_30f7a809-3c55-8397-edea-63a14d388e22-4d388e21" class="aside-grid _1fr-1fr">{%- if section.settings.img_col_1 == nil -%}<img class="image-max-cover" src="{{ 'banner-blog.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, 49vw" id="w-node-_30f7a809-3c55-8397-edea-63a14d388e23-4d388e21" loading="lazy" srcset="{{ 'banner-blog-p-500.jpeg' | asset_url }} 500w, {{ 'banner-blog-p-800.jpeg' | asset_url }} 800w, {{ 'banner-blog.jpg' | asset_url }} 976w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.img_col_1.src | img_url: 'master' }}" alt="{{ section.settings.img_col_1.alt | escape }}" id="w-node-_30f7a809-3c55-8397-edea-63a14d388e23-4d388e21" loading="lazy" srcset="{{ section.settings.img_col_1 | img_url: '1920x' }} 1920w,{{ section.settings.img_col_1 | img_url: '1600x' }} 1600w,{{ section.settings.img_col_1 | img_url: '1366x' }} 1366w,{{ section.settings.img_col_1 | img_url: '1024x' }} 1024w,{{ section.settings.img_col_1 | img_url: '768x' }} 768w,{{ section.settings.img_col_1 | img_url: '640x' }} 640w">{%- endif -%}
+        <div id="w-node-_30f7a809-3c55-8397-edea-63a14d388e24-4d388e21">
+        {%- if section.settings.img_col_2 == nil -%}
+          <img class=width-100 btm-margin-2em"" src="{{ 'banner-blog.jpg' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, 49vw" loading="lazy" srcset="{{ 'banner-blog-p-500.jpeg' | asset_url }} 500w, {{ 'banner-blog-p-800.jpeg' | asset_url }} 800w, {{ 'banner-blog.jpg' | asset_url }} 976w">
+          {%- else -%}
+          <img class="width-100 btm-margin-2em" src="{{ section.settings.img_col_2.src | img_url: 'master' }}" alt="{{ section.settings.img_col_2.alt | escape }}" loading="lazy" srcset="{{ section.settings.img_col_2 | img_url: '1920x' }} 1920w,{{ section.settings.img_col_2 | img_url: '1600x' }} 1600w,{{ section.settings.img_col_2 | img_url: '1366x' }} 1366w,{{ section.settings.img_col_2 | img_url: '1024x' }} 1024w,{{ section.settings.img_col_2 | img_url: '768x' }} 768w,{{ section.settings.img_col_2 | img_url: '640x' }} 640w">
+          {%- endif -%}
+          {%- if section.settings.img_col_3 == nil -%}
+          <img class="width-100" src="{{ 'banner-blog.jpg' | asset_url }}"  alt="" sizes="(max-width: 479px) 100vw, 49vw" loading="lazy" srcset="{{ 'banner-blog-p-500.jpeg' | asset_url }} 500w, {{ 'banner-blog-p-800.jpeg' | asset_url }} 800w, {{ 'banner-blog.jpg' | asset_url }} 976w">
+            {%- else -%}
+            <img class="width-100" src="{{ section.settings.img_col_3.src | img_url: 'master' }}"  alt="{{ section.settings.img_col_3.alt | escape }}" loading="lazy" srcset="{{ section.settings.img_col_3 | img_url: '1920x' }} 1920w,{{ section.settings.img_col_3 | img_url: '1600x' }} 1600w,{{ section.settings.img_col_3 | img_url: '1366x' }} 1366w,{{ section.settings.img_col_3 | img_url: '1024x' }} 1024w,{{ section.settings.img_col_3 | img_url: '768x' }} 768w,{{ section.settings.img_col_3 | img_url: '640x' }} 640w">
+            {%- endif -%}
+        </div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');{% unless request.design_mode %}currentSection.id = "w-node-_30f7a809-3c55-8397-edea-63a14d388e21-4d388e21";{% endunless %}currentSection.setAttribute("class","wf-section");</script>
+        
+{% schema %}
+{
+  "name": "section-festive-collage",
+  "tag": "div",
+  "class": "wf-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img_col_1",
+      "label": "img-col-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_col_2",
+      "label": "img-col-2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_col_3",
+      "label": "img-col-3"
+    }
+  ]
+}
+{% endschema %}

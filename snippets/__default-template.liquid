@@ -1,0 +1,21 @@
+{%- assign headerSnippetPath = "header-index" -%}{%- assign wfPage = "62a4cac57f5d4d03c4a00d86" -%}{%- assign bodyClasses = "" -%}
+  {%- section 'new-nav-pc' -%}
+  <div class="aside-grid">
+    {%- render 'left-nav' -%}
+    <div id="w-node-_73ac3046-45f1-554f-a51e-2e0d2293e956-c4a00d86" class="right-section">
+      <div special-page="content" class="rte-special-page w-richtext">{{content_for_layout}}</div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=613b36b97ccfb87f99eaeb93" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+{{ 'udesly-shopify.min.js' | asset_url | script_tag }}<script>
+        const oldClassName = document.body.className;
+        document.body.className = (oldClassName || "") + " {{ bodyClasses }} {{ "template-" | append: request.page_type | handle }}";
+        if (document.querySelector('.shopify-policy__title') && document.querySelector('[data-page-item="title"]')) {
+          const el = document.querySelector('.shopify-policy__title');
+          const title = (el.textContent || "").trim();
+          el.remove();
+          document.querySelector('[data-page-item="title"]').textContent = title;
+        }</script>

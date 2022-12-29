@@ -1,0 +1,22 @@
+{% capture listItems %}
+{% for item in collections[settings.collection_festive].products limit: settings.collection_festive_limit %}
+<div role="listitem" class="w-dyn-item">
+            <div id="w-node-_8fa9d37f-9df3-8f86-a7c5-eb2dba523d16-6ca7e341">
+              <div class="image-holder"><img loading="lazy" src="{{ item.featured_image | img_url: 'master' }}" alt="{{ item.featured_image.alt }}" class="image-max-cover" data-commerce-type="variation-image" srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w"></div>
+              <div class="flex top-4-5em">
+                <h4 class="_1-5em-fs">{{ item.title }}</h4>
+                <div data-commerce-type="variation-price" class="body-font">{{ item.price | money }}</div>
+              </div>
+            </div>
+          </div>
+{%- endfor -%}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+<div class="w-dyn-list" udy-collection="product">
+        {%- unless items_length == 0 -%}<div role="list" class="_3-col-grid w-dyn-items">
+          {{ listItems }}
+        </div>{%- endunless -%}
+        {%- if items_length == 0 -%}<div class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>{%- endif -%}
+      </div>

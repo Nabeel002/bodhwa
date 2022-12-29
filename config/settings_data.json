@@ -1,0 +1,343 @@
+{
+  "current": {
+    "collection_healing": "pyramids",
+    "collection_healing_limit": 4,
+    "collection_home_decor": "crystal-murti",
+    "collection_home_decor_limit": 4,
+    "collection_jewellery": "crystal-pendants",
+    "collection_jewellery_limit": 4,
+    "sections": {
+      "announcement-ribbon": {
+        "type": "announcement-ribbon",
+        "settings": {
+          "anouncement_text": "2000+ Satisfied Customers! | Free Shipping on orders above 2500\/-"
+        }
+      },
+      "new-nav-pc": {
+        "type": "new-nav-pc",
+        "settings": {
+          "nav_link": "",
+          "nav_link_text": "learn"
+        }
+      },
+      "hero-symbol": {
+        "type": "hero-symbol",
+        "settings": {
+          "pre_title": "Bodh is where style meets Spirit!",
+          "heading": "This New Year, begin your affirmation journey with Bodh!",
+          "sub_heading": "Set your intentions with our crystals & and experience healing energies around you!",
+          "image": "shopify:\/\/shop_images\/hero_image.jpg",
+          "link": "https:\/\/bodhgemandcrystals.com\/pages\/shop",
+          "link_text": "SHOP NOW"
+        }
+      },
+      "home-block-1": {
+        "type": "home-block-1",
+        "settings": {
+          "short_description": "Shop By"
+        }
+      },
+      "home-block-2": {
+        "type": "home-block-2",
+        "settings": {
+          "short_description": "Shop By"
+        }
+      },
+      "home-block-3": {
+        "type": "home-block-3",
+        "settings": {
+          "short_description": "Shop By"
+        }
+      },
+      "about-us-section": {
+        "type": "about-us-section",
+        "settings": {
+          "pretitle": "ABOUT BODH",
+          "heading": "Bodh in Sanskrit Means “Knowledge”",
+          "paragraph": "Our main goal is to synthesize the power of crystals with our expert knowledge in Chakra Healing and Color Therapy to bring peace, positivity and fulfilment into a person’s life"
+        }
+      },
+      "section-client": {
+        "type": "section-client",
+        "settings": {
+          "heading": "Corporate Service",
+          "subtitle": "To Make Every Expierence Personal"
+        }
+      },
+      "section-for-clients-1": {
+        "type": "section-for-clients-1",
+        "settings": {
+          "heading_3": "For clients",
+          "paragraph": "Crystals have taken birth in various shapes and sizes and as magnificent as they are to look at, each crystal-shape holds a definite value, the correct use of which has brought us this farin our lives and will take us even further, once we know the meaning and significance of each. Crystals have never known to be harmful to any species on this planet. Once you set your intentions behind choosing a particular crystal, it tends to form a relationship with your inner being and works in harmony with your emotions – always guiding them towards the correct path."
+        }
+      },
+      "section-for-clients-2": {
+        "type": "section-for-clients-2",
+        "settings": {
+          "heading_2": "For clients",
+          "paragraph_2": "Crystals have taken birth in various shapes and sizes and as magnificent as they are to look at, each crystal-shape holds a definite value, the correct use of which has brought us this farin our lives and will take us even further, once we know the meaning and significance of each. Crystals have never known to be harmful to any species on this planet. Once you set your intentions behind choosing a particular crystal, it tends to form a relationship with your inner being and works in harmony with your emotions – always guiding them towards the correct path."
+        }
+      },
+      "section-for-clients-3": {
+        "type": "section-for-clients-3",
+        "settings": {
+          "heading_3": "For clients",
+          "paragraph_3": "Crystals have taken birth in various shapes and sizes and as magnificent as they are to look at, each crystal-shape holds a definite value, the correct use of which has brought us this farin our lives and will take us even further, once we know the meaning and significance of each. Crystals have never known to be harmful to any species on this planet. Once you set your intentions behind choosing a particular crystal, it tends to form a relationship with your inner being and works in harmony with your emotions – always guiding them towards the correct path."
+        }
+      },
+      "best-seller-home-decor": {
+        "type": "best-seller-home-decor",
+        "settings": {
+          "category_heading": "Best Seller",
+          "heading_1": "Raw Cluster",
+          "heading_2": "Crystal Hearts",
+          "heading_3": "Coasters",
+          "heading_4": "Crystal Ducks",
+          "text_area": "",
+          "image_1": "shopify:\/\/shop_images\/16-48-54-thumbnail-1-460177.jpg",
+          "image_2": "shopify:\/\/shop_images\/DSC1004_1920x_ee611689-15a1-4d54-8b24-b6314917447c.webp",
+          "image_3": "shopify:\/\/shop_images\/coasters-p-500.jpg",
+          "image_4": "shopify:\/\/shop_images\/dsc1008-1_1-p-2000.jpg",
+          "link_1": "shopify:\/\/collections\/raw-clusters",
+          "link_2": "shopify:\/\/collections\/hearts",
+          "link_3": "shopify:\/\/collections\/coasters",
+          "link_4": "shopify:\/\/collections\/ducks"
+        }
+      },
+      "offer-section-home-decor": {
+        "type": "offer-section-home-decor",
+        "settings": {
+          "heading": "Best Festive Offers",
+          "text": "The Estrella Collection has been our most loved collection since we launched it! These dainty yet modern style catches everyone’s attention.Wear it every day as your statement necklace. Wear it close to your Heart, make it a part of your being. ❤️🕊️",
+          "sub_heading_1": "From ₹140",
+          "heading_1": "Tumble & Chips",
+          "sub_heading_2": "10-40% OFF",
+          "heading_2": "Home Decor",
+          "sub_heading_3": "7 Chakra Set",
+          "heading_3": "New Release",
+          "sub_heading_4": "Crystal Trees",
+          "heading_4": "On Sale",
+          "link_1": "",
+          "link_2": "",
+          "link_3": "",
+          "link_4": ""
+        }
+      },
+      "candle-holder-section": {
+        "type": "candle-holder-section",
+        "settings": {
+          "category_heading": "Crystal Murtis!",
+          "category_description": "Each Murti is made of handpicked crystals, carefully chosen based on their properties for your Intention. Purposefully place these crystals in your home or workspace to serve the intention.",
+          "collection_url": "shopify:\/\/collections\/crystal-murti",
+          "collection_url_text": "View Collection"
+        }
+      },
+      "best-seller-jewellery": {
+        "type": "best-seller-jewellery",
+        "settings": {
+          "category_heading": "Best Seller",
+          "heading_1": "Estrella",
+          "heading_2": "Crystal Anklets",
+          "heading_3": "Bracelets",
+          "heading_4": "Crystal Earrings",
+          "text_area": "",
+          "image_1": "shopify:\/\/shop_images\/estrella.png",
+          "image_2": "shopify:\/\/shop_images\/60ca1bee6dea7720d2a8767d_citrine-original.jpg",
+          "image_3": "shopify:\/\/shop_images\/healing_bracelet.png",
+          "image_4": "shopify:\/\/shop_images\/earrings.png",
+          "link_1": "shopify:\/\/collections\/estrella-by-bodh",
+          "link_2": "shopify:\/\/collections\/anklets",
+          "link_3": "shopify:\/\/collections\/bracelets",
+          "link_4": "shopify:\/\/collections\/earrings"
+        }
+      },
+      "festive-offer-jewellery": {
+        "type": "festive-offer-jewellery",
+        "settings": {
+          "heading": "Complete your look with ease & sophistication!",
+          "sub_heading_1": "Stackable Bracelets",
+          "heading_1": "Curated for your intention!",
+          "sub_heading_2": "Crystal Pendants",
+          "heading_2": "Starting from 450",
+          "sub_heading_3": "Estrella by bodh",
+          "heading_3": "New Collection!",
+          "sub_heading_4": "Necklaces",
+          "text": "On Sale",
+          "text_area": "Handmade with Love , good intentions & Good Energy✨",
+          "image_1": "shopify:\/\/shop_images\/stackable_bracelets_jpg.jpg",
+          "image_2": "shopify:\/\/shop_images\/pendant.png",
+          "image_3": "shopify:\/\/shop_images\/DSC6597.png",
+          "image_4": "shopify:\/\/shop_images\/necklace.png",
+          "offer_1_link": "shopify:\/\/collections\/stackable-bracelet",
+          "offer_2_link": "shopify:\/\/collections\/crystal-pendants",
+          "offer_3_link": "shopify:\/\/collections\/estrella-by-bodh",
+          "offer_4_link": "shopify:\/\/collections\/necklaces"
+        }
+      },
+      "anklets-section": {
+        "type": "anklets-section",
+        "settings": {
+          "collection_2_heading": "Crystal Pendants",
+          "collection_2_text": "Let your light shine bright with the beauty of the ✨Crystal Pendants✨ These beauties are filled with immense goodness & will surely elevate your outfit with the perfect amount of elegance!",
+          "collection2_ink": "shopify:\/\/collections\/crystal-pendants",
+          "collection2_ink_text": "View Collection"
+        }
+      },
+      "best-seller-healing": {
+        "type": "best-seller-healing",
+        "settings": {
+          "category_heading": "Best Seller",
+          "heading_1": "Crystal Grids",
+          "heading_2": "Angel & Generators",
+          "heading_3": "Facial Tools",
+          "heading_4": "Charging Tools",
+          "text_area": "",
+          "image_1": "shopify:\/\/shop_images\/DSC2181.jpg",
+          "image_2": "shopify:\/\/shop_images\/DSC_9399.jpg",
+          "image_3": "shopify:\/\/shop_images\/facial_tools_bodh.jpg",
+          "image_4": "shopify:\/\/shop_images\/DSC1113.jpg",
+          "link_1": "shopify:\/\/collections\/crystal-grids",
+          "link_2": "shopify:\/\/collections\/angels-generators",
+          "link_3": "shopify:\/\/collections\/facial-tools",
+          "link_4": "shopify:\/\/collections\/charging-tools"
+        }
+      },
+      "diwali-section-2": {
+        "type": "diwali-section-2",
+        "settings": {
+          "sub_heading_1": "Crystal Kit",
+          "heading_1": "New Kits Available Now!",
+          "sub_heading_2": "Facial tools",
+          "heading_2": "Last Few left!",
+          "sub_heading_3": "Crystal Balls",
+          "heading_3": "Selling out Fast!",
+          "sub_heading_4": "Selenite Heart Bowl",
+          "heading_4": "New Stock In!",
+          "text_area": "Bring in the power of crystals in your life to enhance your meditation and manifestation practices. Crystals are like your guiding light and a gentle reminder to take a moment for yourself and for your mindful growth.",
+          "image1": "shopify:\/\/shop_images\/spirituality-and-meditation-kit-202139-p-500.jpg",
+          "image2": "shopify:\/\/shop_images\/facial_tools_bodh.jpg",
+          "image3": "shopify:\/\/shop_images\/5fbe758bec8db41bdac4d328_balls_hero_ss.jpg",
+          "image4": "shopify:\/\/shop_images\/2_6151fbe7-6f3e-4d07-b6df-f43e607bf248.png",
+          "url_1": "shopify:\/\/collections\/intention-kits",
+          "url_2": "shopify:\/\/collections\/facial-tools",
+          "url_3": "shopify:\/\/collections\/crystal-balls",
+          "url_4": "shopify:\/\/products\/selenite-heart-bowl"
+        }
+      },
+      "crsytal-section-2": {
+        "type": "crsytal-section-2",
+        "settings": {
+          "category_heading2": "Pyramids",
+          "category_short_text2": "Bring in the power of crystals in your life to enhance your meditation and manifestation practices. Crystals are like your guiding light and a gentle reminder to take a moment for yourself and for your mindful growth.",
+          "collection_link_2": "shopify:\/\/collections\/pyramids",
+          "collection_link_2_text": "View Collection"
+        }
+      },
+      "section-festive-collage": {
+        "type": "section-festive-collage",
+        "settings": {
+          "img_col_1": "shopify:\/\/shop_images\/IMG_9183.jpg",
+          "img_col_2": "shopify:\/\/shop_images\/hamper_2.png",
+          "img_col_3": "shopify:\/\/shop_images\/IMG_7252.jpg"
+        }
+      },
+      "section-festive-content": {
+        "type": "section-festive-content",
+        "settings": {
+          "category_heading": "Crystal Festivities",
+          "paragraph": "Every Festival ignites our hearts and minds with joy!\n<br>\n This time, lets celebrate them with crystals!\n<br>\n<br>\nCrystals to lighten up your festival!"
+        }
+      },
+      "section-festive-grid": {
+        "type": "section-festive-grid",
+        "settings": {
+          "text_1": "Jewellery",
+          "text_2": "Home Decor",
+          "button_url": "shopify:\/\/pages\/jewellery",
+          "button_2": "shopify:\/\/pages\/home-decor"
+        }
+      },
+      "section-b2b-hero": {
+        "type": "section-b2b-hero",
+        "settings": {
+          "heading": "Corporate Service",
+          "subtitle": "Establish a relationship of trust and respect",
+          "hero_image": "shopify:\/\/shop_images\/Untitled_design_2.jpg"
+        }
+      },
+      "b2b-content-section": {
+        "type": "b2b-content-section",
+        "settings": {
+          "head": "A Little About Our Gifting Service",
+          "paragraph": "Crystals are a gift with deeper meaning. If you want to keep your gift hampers professional or give them a personal touch, crystals will serve both purposes. Nothing beats the gift of peace & joy, and crystal gift hampers will bring peace, love, and joy to the receiver's life. Customize as per your requirement or choose from our pre-curated hampers for your clients & employees."
+        }
+      },
+      "b2b-2col-grid": {
+        "type": "b2b-2col-grid",
+        "settings": {
+          "subsection_heading": "For Clients",
+          "subsection_image": "shopify:\/\/shop_images\/B_B_CARD.png"
+        }
+      },
+      "b2b-subsection": {
+        "type": "b2b-subsection",
+        "settings": {
+          "subection_heading_2": "For Employees",
+          "subection_image_2": "shopify:\/\/shop_images\/corporate_gifting_card_images.png"
+        }
+      },
+      "b2b-subhero": {
+        "type": "b2b-subhero",
+        "settings": {
+          "subhero_image": "shopify:\/\/shop_images\/last_image.png"
+        }
+      },
+      "b2b-section-form-title": {
+        "type": "b2b-section-form-title",
+        "settings": {
+          "form_heading": "Get To Know Us",
+          "form_subtitle": "To Make Every Experience Personal"
+        }
+      },
+      "section-gifting": {
+        "type": "section-gifting",
+        "settings": {
+          "heading": "Gifting Guide",
+          "subtitle": "Your crystal gifting guide",
+          "hero_image": "shopify:\/\/shop_images\/IMG_7243_1.jpg"
+        }
+      },
+      "for-you-section": {
+        "type": "for-you-section",
+        "settings": {
+          "image_for_him": "shopify:\/\/shop_images\/for_him.png",
+          "image_for_her": "shopify:\/\/shop_images\/for_her.png"
+        }
+      },
+      "sub-section-gifting": {
+        "type": "sub-section-gifting",
+        "settings": {
+          "heading": "Presents For All Occasion",
+          "title": "Every occasion is worth a million crystals"
+        }
+      },
+      "2-col-grid": {
+        "type": "2-col-grid",
+        "settings": {
+          "heading": "The Wedding Edit"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "14236898902689827741": {
+        "type": "shopify:\/\/apps\/stack-discounts-ninja-pg\/blocks\/app-embed\/42061352-3816-430f-b7f9-d8d92f58c694",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
+  }
+}

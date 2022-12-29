@@ -1,0 +1,29 @@
+
+    <div class="container">
+      <div class="w-layout-grid annoucement-grid">
+        <div class="annoucement-text mobile-hide">Here to <a href="https://bodhgemandcrystals.com/pages/contact-us" class="annoucement-text-link">help</a>
+        </div>
+        <div id="w-node-_92b4d293-6ac4-3f2f-20dd-d3be16b672db-16b672d4" class="annoucement-text">{{ section.settings.anouncement_text }}</div>
+        <div id="w-node-_92b4d293-6ac4-3f2f-20dd-d3be16b672dd-16b672d4" class="annoucement-text left-align mobile-hide">For corporate orders <a href="https://bodhgemandcrystals.com/pages/b2b" class="annoucement-text-link">get in touch here</a>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","annoucement-ribbon");</script>
+        
+{% schema %}
+{
+  "name": "announcement-ribbon",
+  "tag": "div",
+  "class": "annoucement-ribbon",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anouncement_text",
+      "label": "anouncement text",
+      "default": "Use Code \"MANIFEST\" for 10% OFF on the healing collection"
+    }
+  ]
+}
+{% endschema %}

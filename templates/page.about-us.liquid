@@ -1,0 +1,41 @@
+{%- assign headerSnippetPath = "header-index" -%}{%- assign wfPage = "616a6acafdb3cbdd3cb1a5b7" -%}{%- assign bodyClasses = "" -%}
+  {%- render 'google-tag-manager' -%}
+  {%- section 'announcement-ribbon' -%}
+  {%- render 'global-css-and-elements' -%}
+  {%- section 'new-nav-pc' -%}
+  <div class="w-layout-grid aside-grid">
+    {%- render 'left-nav' -%}
+    <div class="right-section">
+      <div class="breadcrumb-wrapper">
+        <a href="{{ routes.root_url }}" class="breadcrumb-link s-1-6em">HOME</a>
+        <div class="slash-with-size p-l-0-44em p-r-0-44em">/</div>
+        <a href="{{ pages["about-us"].url }}" aria-current="page" class="breadcrumb-link s-1-6em w--current">About Us</a>
+      </div>
+      <div class="about-us-title-block p-top-8-88em p-bottom-4-44em">
+        <div class="pre-title s-1-07em m-bottom-0-71em">OUR STORY</div>
+        <h1 class="heading-1 h-120 l-spacing--0-03 _w-16-ch m-b-2-13em">Bodh Gem and Crystals</h1>
+        <div class="subtitle m-widht-70ch color-moonstone m-top-0-89em m-bottom-1-78em"><br>“Bodh”, in its simplest form, refers to something holy, something that gives out knowledge, and lifts our existence to a stage where life has meaning.<br>‍<br>Bodh Gem and Crystals took birth as a brainchild of a family, which believes in the healing capacities of the energies that surround us. Apart from the healing capacities, they looked at a world which would embrace crystals for the beauty of them. <br>Through these thoughts, Bodh Gem and Crystals aims at spreading positivity, happiness, peace and elegance in our fast moving, chaotic world, where even humans don’t stop for nothing.<br><br>To bring their dream into existence, the company has created a journey, which involves choosing crystals that are 100% pure, energising them through natural processes and finally giving you the authentic experience of what it is, to heal and make your lifestyle better with the help of crystals.</div>
+      </div>
+      <div class="w-layout-grid grid-3">
+        <div><img src="{{ 'monica-dedhia.jpg' | asset_url }}" loading="lazy" alt="" class="image-2"></div>
+        <div class="blog-wrapper-block">
+          <h1 class="heading-2 size-3-2em m-top-0-71em m-bottom-0-68em">Mrs. Monica Dedhia</h1>
+          <p class="body-font m-width-45ch s-1-42em p-left-4-8em m-bottom-3-2em">The very first believer of the family, Mrs. Monica Dedhia started her journey in healing through Su-Jok in 2008. Her interests soon took her to a professional level, as she graduated through<br>‍<br>Su-Jok Ki International in 2010 and further continued to pursue the advance programme and theory in 2012. Mrs. Monica is a firm believer in the power of her beloved crystals and promotes the idea of alternate healing through aura cleansing and hosting seminars – which take us deeper into the world of alternate healing.</p>
+        </div>
+        <div class="blog-wrapper-blog">
+          <h1 class="heading-2 size-3-2em m-top-0-71em m-bottom-0-68em">Mr. Devash Dedhia</h1>
+          <p class="body-font m-width-45ch s-1-42em p-left-4-8em m-bottom-3-2em">Devash, the most curious of them all, always chased the prime roots of every functioning device he came across.<br><br>This characteristic of his, took him overseas to the United States, where he graduated as a mechanical engineer from the Rochester Institute of Technology,New York, in 2017. <br>Furthermore, when he grew more interested (rather curious), in gems and how they can benefit society, he graduated as a Gemologist from the Gemological Institute of America, in 2018. <br>Being the one with authenticating capacity, Devash’s contribution to Bodh Gems and Crystals is of utmost importance.</p>
+        </div>
+        <div class="blog-wrapper-blog">
+          <h1 class="heading-2 size-3-2em m-top-0-71em m-bottom-0-68em">Ms. Merul Dedhia</h1>
+          <p class="body-font m-width-45ch s-1-42em p-left-4-8em m-bottom-3-2em">Merul, the heart of the family as well as the reason behind the company’s name, grew up with a steady business mind. <br>‍<br>Following her passion, she studied business from a young age and ultimately graduated with a Bachelorette in Business Management, from the University of London International Programmes. <br>‍<br>Bringing her skills into full potential, it is Merul who has brought Bodh Gems and Crystals to the outside world. Right from social media, to business development, Merul’s ideas have made the way for the company to stomp its mark on the digital world that we live in today.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%- render 'footer' -%}
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=613b36b97ccfb87f99eaeb93" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+{{ 'udesly-shopify.min.js' | asset_url | script_tag }}

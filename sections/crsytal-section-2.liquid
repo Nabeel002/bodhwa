@@ -1,0 +1,45 @@
+
+    <div class="container">
+      <div class="div-block-10">
+        <h1 class="heading-2 center">{{ section.settings.category_heading2 }}</h1>
+        <p class="body-font center max-width-61ch">{{ section.settings.category_short_text2 }}</p>
+        {%- if settings.collection_healing != blank -%}{%- render "markup_for_collection_healing" -%}{%- else -%}{%- render "products_max_4" -%}{%- endif -%}
+        <a href="{{ section.settings.collection_link_2 }}" class="outline-button top-margin-20px w-button">{{ section.settings.collection_link_2_text }}</a>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","focused-category-section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "Crsytal-section-2",
+  "tag": "div",
+  "class": "focused-category-section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "category_heading2",
+      "label": "category heading2",
+      "default": "Crystal Kits"
+    },
+    {
+      "type": "text",
+      "id": "category_short_text2",
+      "label": "category short text2",
+      "default": "Heal yourself and others with this carefully curated Crystal Kits✨"
+    },
+    {
+      "type": "url",
+      "id": "collection_link_2",
+      "label": "collection link 2"
+    },
+    {
+      "type": "text",
+      "id": "collection_link_2_text",
+      "label": "collection link 2 Text",
+      "default": "View Collection"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,41 @@
+
+    <div class="grid-wrapper margin-10em">
+      <div class="_2-col-grid">
+        <div id="w-node-dc8bd7b7-d5ea-3fd2-8b8e-d73b39f73876-39f73873" class="_30em-height-image">{%- if section.settings.image == nil -%}<img class="image-max-cover" src="{{ 'blog-header-image-2.png' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 39vw, 100vw" id="w-node-dc8bd7b7-d5ea-3fd2-8b8e-d73b39f73877-39f73873" loading="lazy" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image.src | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" id="w-node-dc8bd7b7-d5ea-3fd2-8b8e-d73b39f73877-39f73873" loading="lazy" srcset="{{ section.settings.image | img_url: '1920x' }} 1920w,{{ section.settings.image | img_url: '1600x' }} 1600w,{{ section.settings.image | img_url: '1366x' }} 1366w,{{ section.settings.image | img_url: '1024x' }} 1024w,{{ section.settings.image | img_url: '768x' }} 768w,{{ section.settings.image | img_url: '640x' }} 640w">{%- endif -%}</div>
+        <div id="w-node-dc8bd7b7-d5ea-3fd2-8b8e-d73b39f73878-39f73873" class="text-align-center padding-2-5em">
+          <h1 class="heading-2 right-centred">{{ section.settings.heading_3 }}</h1>
+          <div class="btm-margin-4em"></div>
+          <p class="paragraph-2">{{ section.settings.paragraph }}</p>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "section-for-clients-1",
+  "tag": "div",
+  "class": "section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_3",
+      "label": "Heading-3",
+      "default": "For clients"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Crystals have taken birth in various shapes and sizes and as magnificent as they are to look at, each crystal-shape holds a definite value, the correct use of which has brought us this farin our lives and will take us even further, once we know the meaning and significance of each. Crystals have never known to be harmful to any species on this planet. Once you set your intentions behind choosing a particular crystal, it tends to form a relationship with your inner being and works in harmony with your emotions – always guiding them towards the correct path."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ]
+}
+{% endschema %}

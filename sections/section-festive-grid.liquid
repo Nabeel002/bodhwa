@@ -1,0 +1,50 @@
+
+        <div class="_2-col-grid">
+          <div id="w-node-_32802938-ba76-e3d8-4273-76a71d1c2b3c-1d1c2b3a"><img src="{{ 'Jewellery.png' | asset_url }}" loading="lazy" image-1="option:image" alt="" class="_37em-width-image image-max-cover">
+            <div class="z-index-div">
+              <h1 class="heading-2 playfair-display" style="white-space: nowrap;">{{ section.settings.text_1 }}</h1>
+              <a href="{{ section.settings.button_url }}" class="shop-now-btn _2em-left-margin w-button">SHOP NOW<br></a>
+            </div>
+          </div>
+          <div id="w-node-_32802938-ba76-e3d8-4273-76a71d1c2b44-1d1c2b3a"><img src="{{ 'frame.jpg' | asset_url }}" loading="lazy" image-2="option:image" alt="" class="_37em-width-image image-max-cover">
+            <div class="z-index-div left">
+              <h1 class="heading-2 playfair-display" style="white-space: nowrap;">{{ section.settings.text_2 }}</h1>
+              <a href="{{ section.settings.button_2 }}" class="shop-now-btn _2em-left-margin w-button">SHOP NOW<br></a>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');{% unless request.design_mode %}currentSection.id = "w-node-_32802938-ba76-e3d8-4273-76a71d1c2b3a-1d1c2b3a";{% endunless %}currentSection.setAttribute("class","wf-section");</script>
+        
+{% schema %}
+{
+  "name": "section-festive-grid",
+  "tag": "div",
+  "class": "wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "text-1",
+      "default": "Bracelets"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "text-2",
+      "default": "Bracelets"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "button-url"
+    },
+    {
+      "type": "url",
+      "id": "button_2",
+      "label": "button 2"
+    }
+  ]
+}
+{% endschema %}

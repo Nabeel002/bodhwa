@@ -1,0 +1,30 @@
+
+    <div class="grid-wrapper">
+      <div class="_2-col-grid">
+        <h1 id="w-node-fe4faf99-2954-6411-d510-850f396d025a-396d0257" class="heading-2 right-centred mr-3">{{ section.settings.subection_heading_2 }}</h1>{%- if section.settings.subection_image_2 == nil -%}<img class="image-max-cover" src="{{ 'blog-header-image-2.png' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 34vw, 100vw" id="w-node-fe4faf99-2954-6411-d510-850f396d025e-396d0257" loading="lazy" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.subection_image_2.src | img_url: 'master' }}" alt="{{ section.settings.subection_image_2.alt | escape }}" id="w-node-fe4faf99-2954-6411-d510-850f396d025e-396d0257" loading="lazy" srcset="{{ section.settings.subection_image_2 | img_url: '1920x' }} 1920w,{{ section.settings.subection_image_2 | img_url: '1600x' }} 1600w,{{ section.settings.subection_image_2 | img_url: '1366x' }} 1366w,{{ section.settings.subection_image_2 | img_url: '1024x' }} 1024w,{{ section.settings.subection_image_2 | img_url: '768x' }} 768w,{{ section.settings.subection_image_2 | img_url: '640x' }} 640w">{%- endif -%}
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section space-10 wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-subsection",
+  "tag": "div",
+  "class": "section space-10 wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subection_heading_2",
+      "label": "subection-heading-2",
+      "default": "ForEmployees"
+    },
+    {
+      "type": "image_picker",
+      "id": "subection_image_2",
+      "label": "subection-image-2"
+    }
+  ]
+}
+{% endschema %}

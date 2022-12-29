@@ -1,0 +1,100 @@
+{{ '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js' | script_tag }}
+{{ 'jquery.product.min.js' | asset_url | script_tag }}
+<style>
+    #recently-viewed-products{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-row-gap: 19px;
+margin-top:1.5rem;
+margin-left:1.5rem;
+margin-right:1.5rem;
+    
+grid-column-gap: 19px;
+  }
+
+  
+  .section-header{
+    text-align:center;
+  }
+
+  .title{
+    font-size:2.4em;
+    text-align:center;
+  }
+    .details{
+      text-align:center;
+      
+    }
+  @media screen and (min-width:750px){
+  #recently-viewed-products{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-row-gap: 0px;
+margin-top:3rem;
+margin-left:5rem;
+margin-right:5rem;
+    
+grid-column-gap: 19px;
+  }
+
+     .title{
+    font-size:1.4em;
+   
+    
+  }
+
+    .details{
+      text-align:center;
+      
+    }
+  }
+
+</style>
+
+
+
+<div class="clearfix"></div>
+<header class="section-header">
+                 <h2 class="heading-2">Recently Viewed Products</h2>         
+
+
+             </header>  
+  <div class="product-template__container page-width head-room">
+        <aside class="grid">
+          <div class="grid__item">
+            <div id="recently-viewed-products" class="collection clearfix " >
+             
+            </div>
+          </div>
+        </aside>  
+  </div>
+{% assign grid_item_width = 'small--one-half medium-up--one-quarter' %}
+   <div class="grid grid--uniform grid--view-items leg-room">
+      {% raw %}
+      
+      <script id="recently-viewed-product-template"  type="text/x-jquery-tmpl">
+      <div class="grid__item small--one-half medium-up--one-quarter"  itemscope itemtype="http://schema.org/Product" >
+      <div id="product-${handle}" class="products"}>
+        <div class="image">
+          <a href="${url}">
+            <img class="image-max-cover" src="${Shopify.Products.resizeImage(featured_image, "medium")}" />
+          </a>
+        </div>
+        <div class="details">
+          <a href="${url}">
+            <span class="title">${title}</span>
+            <!--Add Price Code-->
+    
+          </a>
+        </div>
+      </div>
+      </div>
+      </script>
+      {% endraw %}
+
+      <script>
+      Shopify.Products.showRecentlyViewed( { howManyToShow:4 } );
+      </script>
+	</div>

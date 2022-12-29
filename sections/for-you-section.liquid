@@ -1,0 +1,40 @@
+
+      <div class="flex left">
+        <h1 class="button-text">Shop</h1>
+        <div class="_1-5em-fs">For Him</div>
+      </div>
+      <div class="w-layout-grid grid-2-col">
+        <a link-for-him="option:url" href="https://bodhgemandcrystals.com/collections/crystalline-by-bodh" class="w-inline-block">
+          <div id="w-node-_3b1d6e3f-6799-5f9d-e8a7-04bdbe312824-be31281d" class="card">{%- if section.settings.image_for_him == nil -%}<img class="image-max-cover" src="{{ 'blog-header-image-2.png' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 24vw, 100vw" loading="lazy" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_for_him.src | img_url: 'master' }}" alt="{{ section.settings.image_for_him.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_for_him | img_url: '1920x' }} 1920w,{{ section.settings.image_for_him | img_url: '1600x' }} 1600w,{{ section.settings.image_for_him | img_url: '1366x' }} 1366w,{{ section.settings.image_for_him | img_url: '1024x' }} 1024w,{{ section.settings.image_for_him | img_url: '768x' }} 768w,{{ section.settings.image_for_him | img_url: '640x' }} 640w">{%- endif -%}</div>
+        </a>
+        <a link-for-her="option:url" href="https://bodhgemandcrystals.com/collections/estrella-by-bodh" class="w-inline-block">
+          <div id="w-node-_0a7d323e-c993-27ac-1782-2137a5524cf8-be31281d" class="card">{%- if section.settings.image_for_her == nil -%}<img class="image-max-cover" src="{{ 'blog-header-image-2.png' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 24vw, 100vw" loading="lazy" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_for_her.src | img_url: 'master' }}" alt="{{ section.settings.image_for_her.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_for_her | img_url: '1920x' }} 1920w,{{ section.settings.image_for_her | img_url: '1600x' }} 1600w,{{ section.settings.image_for_her | img_url: '1366x' }} 1366w,{{ section.settings.image_for_her | img_url: '1024x' }} 1024w,{{ section.settings.image_for_her | img_url: '768x' }} 768w,{{ section.settings.image_for_her | img_url: '640x' }} 640w">{%- endif -%}</div>
+        </a>
+      </div>
+      <div class="flex right">
+        <h1 class="button-text">Shop</h1>
+        <div class="_1-5em-fs">For Her</div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section nam-wrapper wf-section");</script>
+        
+{% schema %}
+{
+  "name": "for-you-section",
+  "tag": "div",
+  "class": "section nam-wrapper wf-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_for_him",
+      "label": "image-for-him"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_for_her",
+      "label": "image-for-her"
+    }
+  ]
+}
+{% endschema %}

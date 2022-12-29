@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-wf-page="{{ wfPage }}" data-wf-site="613b36b97ccfb87f99eaeb93" lang="{{ request.locale.iso_code }}" data-money-format="{{ shop.money_format | escape }}"><head>{%- liquid
+    if headerSnippetPath
+        include headerSnippetPath
+    else
+        render "__default-head"
+    endif
+-%}
+{{content_for_header}}
+{% if template contains 'customers' %}
+    {{ "shopify_common.js" | shopify_asset_url | script_tag }}
+{% endif %}
+{% capture cur %}{% include "booster-currency" %}{% endcapture %}{% unless cur contains "Liquid error" %}{{ cur }}{% endunless %}
+	{% render 'vitals-loader' %}
+
+</head>
+<body class="{{ bodyClasses }} {{ "template-" | append: request.page_type | handle }}">
+{% if headerSnippetPath %}
+    {{ content_for_layout }}
+{% else %}
+    {% include "backup-layout" %}
+{% endif %}
+{% include 'search-autocomplete' %}
+<script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6194c3b2c83718a9" defer></script>
+{% if template contains 'product' %}
+
+{{ '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+
+<script>
+Shopify.Products.recordRecentlyViewed();
+</script>
+
+{% endif %}
+<script type="text/javascript" async="" src="https://reviews.enormapps.com/product-reviews/frontend/embed.js"></script>
+</body></html>

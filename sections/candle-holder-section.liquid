@@ -1,0 +1,45 @@
+
+    <div class="container center-align">
+      <div class="div-block-10">
+        <h1 class="heading-2 center bottom-padding-20">{{ section.settings.category_heading }}</h1>
+        <p class="body-font center max-width-61ch">{{ section.settings.category_description }}</p>
+        {%- if settings.collection_home_decor != blank -%}{%- render "markup_for_collection_home_decor" -%}{%- else -%}{%- render "products_max_4_where_category_idin_categorychips" -%}{%- endif -%}
+        <a href="{{ section.settings.collection_url }}" class="outline-button top-margin-20px w-button">{{ section.settings.collection_url_text }}</a>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","focused-category-section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "candle-holder-section",
+  "tag": "div",
+  "class": "focused-category-section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "category_heading",
+      "label": "Category heading",
+      "default": "Candle Holders"
+    },
+    {
+      "type": "textarea",
+      "id": "category_description",
+      "label": "category description",
+      "default": "Who doesn't love a lit selenite in their house? upgrade your candle’s magic and add a crystal charm! 😇"
+    },
+    {
+      "type": "url",
+      "id": "collection_url",
+      "label": "Collection Url"
+    },
+    {
+      "type": "text",
+      "id": "collection_url_text",
+      "label": "Collection Url Text",
+      "default": "View Collection"
+    }
+  ]
+}
+{% endschema %}

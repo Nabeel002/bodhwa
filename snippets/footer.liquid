@@ -1,0 +1,84 @@
+<footer class="footer-section">
+    <div class="container">
+      <div class="w-layout-grid grid-footer">
+        <div id="w-node-c86794af-3772-71cf-e258-3397aa499cd3-da554e05" class="div-block-25">
+          <h1 class="heading-1 weight-400">Need Help? Get a<br> <strong class="bold-text">Free Consultation</strong> </h1>
+          <div class="consultation-form w-form">
+            {%- form "customer",  class: "form-3" -%}<input type="hidden" name="contact[tags]" value="newsletter">
+              <div class="form-block-container"><input type="email" class="email-field w-input" maxlength="256" name="contact[email]" data-name="Name 2" placeholder="Enter Your Email Address" id="name-2"><input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button"></div>
+              <div class="checkbox-block"><label class="w-checkbox checkbox-field"><input type="checkbox" id="checkbox-2" name="contact[note][checkbox_]" data-name="Checkbox 2" class="w-checkbox-input checkbox-3 m-left-0-83em"><span class="checkbox-label w-form-label" for="checkbox-2">We respect your privacy. If you wish to receive <strong class="bold-text-2">discount codes</strong> and <strong class="bold-text-3">sale announcements</strong>, check the tick box and subscribe to our newsletter.</span></label></div>
+            {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+            <div class="success-message w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+              <div>{%- render "form-errors", form_errors: form_errors -%}</div>
+            </div>{%- endunless -%}
+          </div>
+        </div>
+        <div id="w-node-bd3f92c0-46d2-3589-2d3a-fb71da554e08-da554e05" class="image-container"><img src="{{ 'footer_image.svg' | asset_url }}" loading="lazy" width="325" alt="" class="footer-logo-image"></div>
+        <div id="w-node-bd3f92c0-46d2-3589-2d3a-fb71da554e0a-da554e05" class="shop-ws-container">
+          <h2 class="footer-heading footer-muted-head">Shopping With Us</h2>
+          <ul role="list" class="list w-list-unstyled">
+            <li>
+              <a href="{{ pages["about-us"].url }}" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="{{ pages["shipping-and-refund"].url }}" class="footer-link">Shipping &amp; delivery</a>
+            </li>
+            <li>
+              <a href="https://www.shreemaruticourier.com/" target="_blank" class="footer-link">Track Your Shipment</a>
+            </li>
+            <li>
+              <a href="{{ pages["shipping-and-refund"].url }}" class="footer-link">Exchange &amp; Returns</a>
+            </li>
+            <li>
+              <div class="animation-wrapper-pc">
+<!--                 <a href="{{ pages["b2b"].url }}" class="footer-link">For Businesses</a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="w-node-bd3f92c0-46d2-3589-2d3a-fb71da554e1f-da554e05" class="here-to-h-container">
+          <h2 class="footer-heading footer-muted-head">Here to help</h2>
+          <ul role="list" class="list w-list-unstyled">
+            <li>
+              <a href="{{ pages["contact-us"].url }}" class="footer-link">Contact Us</a>
+              <a href="{{ pages["return-policy"].url }}" class="footer-link">Return Policy</a>
+              <a href="{{ pages["privacy-policy"].url }}" class="footer-link">Privacy Policy</a>
+              <a href="{{ pages["terms-and-condition"].url }}" class="footer-link">Term &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div id="w-node-bd3f92c0-46d2-3589-2d3a-fb71da554e2d-da554e05" class="social-container">
+          <h2 class="footer-heading footer-muted-head">Follow Us</h2>
+          <ul role="list" class="list-3 w-list-unstyled">
+            <li>
+              <a href="https://www.instagram.com/bodhgemandcrystals/?hl=en" class="footer-link">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/bodhgemandcrystals" class="footer-link">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/bodhgemandcrystals/" target="_blank" class="footer-link">Pinterest</a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/company/bodh-gem-crystals" target="_blank" class="footer-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="active-campaign-base-code w-embed w-script">
+          <script type="text/javascript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    vgo('setAccount', '224939703');
+    vgo('setTrackByDefault', true);
+    vgo('process');
+</script>
+        </div>
+        <div class="active-campaign-pop-up-sode w-embed w-script">
+          <script src="https://bodhgemandcrystals.activehosted.com/f/embed.php?id=10" type="text/javascript" charset="utf-8" defer=""></script>
+        </div>
+        <div id="w-node-c16044d6-12ad-361e-5822-90d5e187ccf0-da554e05" class="footer-muted-text">Registered Address-<br>Meru Tag Prints<br>‍<br>Room No.10, Modi Chawl, Station Road, Santacruz, Mumbai City, Maharashtra, 400054<br><br>Operating Address- 320, Kewal Industrial Estate, Senapati Bapat Marg, Lower Parel West,<br>Mumbai -400013</div>
+      </div>
+    </div>
+  </footer>

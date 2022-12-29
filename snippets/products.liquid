@@ -1,0 +1,19 @@
+{% capture listItems %}
+                        {% for item in collections.all.products %}
+                        <div role="listitem" class="collection-item w-dyn-item">
+            <div item="title" id="w-node-_28b44fb2-c881-cc6f-ad5e-bc1ff90dc21e-dbb1a61e" class="body-font s-1-42">Title</div>
+            <div class="order-text" data-commerce-type="variation-sku">{{ item.selected_or_first_available_variant.sku }}</div>
+            <div item="quantity" class="order-text">3</div>
+            <div item="price" class="order-text">$60</div>
+          </div>
+                        {% endfor %}
+                        {% endcapture %}
+{% assign items_length = listItems | strip | size %}
+    <div class="collection-list-wrapper-2 w-dyn-list" udy-collection="product">
+        {%- unless items_length == 0 -%}<div role="list" class="collection-list w-dyn-items">
+          {{ listItems }}
+        </div>{%- endunless -%}
+        {%- if items_length == 0 -%}<div class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>{%- endif -%}
+      </div>

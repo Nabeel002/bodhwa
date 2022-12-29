@@ -1,0 +1,27 @@
+{% capture listItems %}
+
+{%- assign allItems = blogs['post'].articles -%}
+{%- for item in allItems limit: 3 -%}
+ <div role="listitem" class="w-dyn-item">
+            <a href="{{ item.url }}" class="link-block w-inline-block">
+              <div class="blog-image-holder"><img alt="{{ item.image.alt }}" loading="lazy" src="{{ item.image | img_url: 'master' }}" class="image-max-cover" srcset="{{ item.image | img_url: '1920x' }} 1920w,{{ item.image | img_url: '1600x' }} 1600w,{{ item.image | img_url: '1366x' }} 1366w,{{ item.image | img_url: '1024x' }} 1024w,{{ item.image | img_url: '768x' }} 768w,{{ item.image | img_url: '640x' }} 640w"></div>
+              <div class="blog-content-wrapper">
+                <h2 class="blog-heading">{{ item.title }}</h2>
+                <p class="subtitle color-moonstone tab-subtitle">{{ item.excerpt }}</p>
+                <p class="blog-date">{{ item.published_at | date: "%B %e, %Y" }}</p>
+              </div>
+            </a>
+          </div>
+{%- endfor -%}
+
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+
+<article class="blog-wrapper w-dyn-list" udy-collection="post">
+        {%- unless items_length == 0 -%}<div role="list" class="grid-3col w-dyn-items">
+          {{ listItems }}
+        </div>{%- endunless -%}
+        {%- if items_length == 0 -%}<div class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>{%- endif -%}
+      </article>

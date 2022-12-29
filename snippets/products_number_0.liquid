@@ -1,0 +1,63 @@
+{% capture listItems %}
+
+{% paginate search.results by settings.search_results_limit %} 
+
+
+{% for item in search.results %}
+
+<div role="listitem" class="search-result-item w-dyn-item">
+    <a href="{{ item.url }}" class="product-card-wrapper w-inline-block">
+        {% if item.object_type == 'article' %}
+        <div class="product-image-wrapper">
+            <img
+                src="{{ item.image | img_url: 'master' }}"
+                loading="lazy"
+                alt="{{ item.image.alt }}"
+                class="image-max-cover"
+                data-commerce-type="variation-image"
+                srcset="{{ item.image | img_url: '1920x' }} 1920w,{{ item.image | img_url: '1600x' }} 1600w,{{ item.image | img_url: '1366x' }} 1366w,{{ item.image | img_url: '1024x' }} 1024w,{{ item.image | img_url: '768x' }} 768w,{{ item.image | img_url: '640x' }} 640w"
+            />
+        </div>
+
+        {% else %}
+
+        <div class="product-image-wrapper">
+            <img
+                src="{{ item.featured_image | img_url: 'master' }}"
+                loading="lazy"
+                alt="{{ item.featured_image.alt }}"
+                class="image-max-cover"
+                data-commerce-type="variation-image"
+                srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w"
+            />
+        </div>
+
+        {% endif %}
+        <div class="product-content-wrapper">
+            <div class="product-card-heading-copy"><p>{{ item.title }}</p></div>
+            <div class="product-price-holder">
+                <div
+                    data-commerce-type="variation-price"
+                    class="product-card-price"
+                >
+                    {{ item.price | money }}
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endfor %}
+{% endpaginate %}
+{% endcapture %} 
+{% assign items_length = listItems | strip | size %}
+<div class="search-result-wrapper w-dyn-list" udy-collection="product">
+    {%- unless items_length == 0 -%}
+    <div role="list" class="search-result-list w-dyn-items">
+        {{ listItems }}
+    </div>
+    {%- endunless -%} {%- if items_length == 0 -%}
+    <div class="w-dyn-empty">
+        <div>No items found.</div>
+    </div>
+    {%- endif -%}
+</div>

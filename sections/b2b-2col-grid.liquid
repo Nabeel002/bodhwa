@@ -1,0 +1,30 @@
+
+    <div class="grid-wrapper">
+      <div class="_2-col-grid">
+        <h1 id="w-node-_24634e18-f7d3-d8d5-65c7-b04226a3f6c2-26a3f6bf" class="heading-2 right-centred left-centered _3-5em">{{ section.settings.subsection_heading }}</h1>{%- if section.settings.subsection_image == nil -%}<img class="image-max-cover" src="{{ 'blog-header-image-2.png' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 34vw, 100vw" id="w-node-_24634e18-f7d3-d8d5-65c7-b04226a3f6c6-26a3f6bf" loading="lazy" srcset="{{ 'blog-header-image-2-p-500.png' | asset_url }} 500w, {{ 'blog-header-image-2-p-800.png' | asset_url }} 800w, {{ 'blog-header-image-2.png' | asset_url }} 935w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.subsection_image.src | img_url: 'master' }}" alt="{{ section.settings.subsection_image.alt | escape }}" id="w-node-_24634e18-f7d3-d8d5-65c7-b04226a3f6c6-26a3f6bf" loading="lazy" srcset="{{ section.settings.subsection_image | img_url: '1920x' }} 1920w,{{ section.settings.subsection_image | img_url: '1600x' }} 1600w,{{ section.settings.subsection_image | img_url: '1366x' }} 1366w,{{ section.settings.subsection_image | img_url: '1024x' }} 1024w,{{ section.settings.subsection_image | img_url: '768x' }} 768w,{{ section.settings.subsection_image | img_url: '640x' }} 640w">{%- endif -%}
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section space-4 wf-section");</script>
+        
+{% schema %}
+{
+  "name": "b2b-2col-grid",
+  "tag": "div",
+  "class": "section space-4 wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subsection_heading",
+      "label": "subsection-heading",
+      "default": "ForClients"
+    },
+    {
+      "type": "image_picker",
+      "id": "subsection_image",
+      "label": "subsection-image"
+    }
+  ]
+}
+{% endschema %}

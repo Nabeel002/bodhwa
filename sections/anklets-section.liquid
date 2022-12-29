@@ -1,0 +1,45 @@
+
+    <div class="container">
+      <div class="div-block-10">
+        <h1 class="heading-2 center bottom-padding-20">{{ section.settings.collection_2_heading }}</h1>
+        <p class="body-font center max-width-61ch">{{ section.settings.collection_2_text }}</p>
+        {%- if settings.collection_jewellery != blank -%}{%- render "markup_for_collection_jewellery" -%}{%- else -%}{%- render "products_max_4_where_category_idin_categorybla_blah_2" -%}{%- endif -%}
+        <a href="{{ section.settings.collection2_ink }}" class="outline-button top-margin-20px w-button">{{ section.settings.collection2_ink_text }}</a>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","focused-category-section no-margin wf-section");</script>
+        
+{% schema %}
+{
+  "name": "Anklets-section",
+  "tag": "div",
+  "class": "focused-category-section no-margin wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "collection_2_heading",
+      "label": "collection 2 heading",
+      "default": "Anklets"
+    },
+    {
+      "type": "textarea",
+      "id": "collection_2_text",
+      "label": "collection 2 text",
+      "default": "The Estrella Collection has been our most loved collection since we launched it! These dainty yet modern style catches everyone’s attention. Wear it every day as your statement necklace. Wear it close to your Heart, make it a part of your being. ❤️🕊️"
+    },
+    {
+      "type": "url",
+      "id": "collection2_ink",
+      "label": "collection2 ink"
+    },
+    {
+      "type": "text",
+      "id": "collection2_ink_text",
+      "label": "collection2 ink Text",
+      "default": "View Collection"
+    }
+  ]
+}
+{% endschema %}

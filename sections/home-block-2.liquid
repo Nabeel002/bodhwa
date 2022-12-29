@@ -1,0 +1,32 @@
+<a option:url="link 2" href="https://bodhgemandcrystals.com/pages/jewellery" class="crysta-link w-inline-block">
+          <div class="crystal-image-wrapper">{%- if section.settings.main_image == nil -%}<img class="image-max-cover" src="{{ 'dsc_9556e_34a75ac5-bcb3-46c2-bd87-23977eef814b.jpeg' | asset_url }}" width="842" height="" alt="Jewellery" sizes="(max-width: 479px) 55vw, (max-width: 991px) 34vw, 30vw" loading="lazy" srcset="{{ 'dsc_9556e_34a75ac5-bcb3-46c2-bd87-23977eef814b-p-500.jpeg' | asset_url }} 500w, {{ 'dsc_9556e_34a75ac5-bcb3-46c2-bd87-23977eef814b.jpeg' | asset_url }} 650w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.main_image.src | img_url: 'master' }}" width="842" height="" alt="{{ section.settings.main_image.alt | escape }}" loading="lazy" srcset="{{ section.settings.main_image | img_url: '1920x' }} 1920w,{{ section.settings.main_image | img_url: '1600x' }} 1600w,{{ section.settings.main_image | img_url: '1366x' }} 1366w,{{ section.settings.main_image | img_url: '1024x' }} 1024w,{{ section.settings.main_image | img_url: '768x' }} 768w,{{ section.settings.main_image | img_url: '640x' }} 640w">{%- endif -%}</div>
+          <div class="crystal-content-wrapper">
+            <div class="crystal-call-to-action">{{ section.settings.short_description }}</div>
+            <div class="crystal-title">JEWELLERY</div>
+          </div>
+        </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "home-block-2",
+  "tag": "div",
+  "class": "crysta-link w-inline-block",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "short_description",
+      "label": "short description",
+      "default": "Shop By"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "main image"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,158 @@
+
+    <div class="container">
+      <div class="div-block-10">
+        <h1 class="heading-2 center bottom-padding-20">{{ section.settings.heading }}</h1>
+        <p class="body-font center max-width-61ch">{{ section.settings.text_area }}</p>
+        <div class="w-layout-grid offer-grid">
+          <a href="{{ section.settings.offer_1_link }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper">
+              <div class="product-image-wrapper">{%- if section.settings.image_1 == nil -%}<img class="image-max-cover" src="{{ 'pink-jasper-mask-chain-781243.jpeg' | asset_url }}" alt="" sizes="(max-width: 479px) 75vw, (max-width: 767px) 53vw, (max-width: 991px) 52vw, 28vw" loading="lazy" srcset="{{ 'pink-jasper-mask-chain-781243-p-1080.jpeg' | asset_url }} 1080w, {{ 'pink-jasper-mask-chain-781243-p-1600.jpeg' | asset_url }} 1600w, {{ 'pink-jasper-mask-chain-781243-p-2000.jpeg' | asset_url }} 2000w, {{ 'pink-jasper-mask-chain-781243.jpeg' | asset_url }} 2048w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_1.src | img_url: 'master' }}" alt="{{ section.settings.image_1.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_1 | img_url: '1920x' }} 1920w,{{ section.settings.image_1 | img_url: '1600x' }} 1600w,{{ section.settings.image_1 | img_url: '1366x' }} 1366w,{{ section.settings.image_1 | img_url: '1024x' }} 1024w,{{ section.settings.image_1 | img_url: '768x' }} 768w,{{ section.settings.image_1 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_1 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_1 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.offer_2_link }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper">
+              <div class="product-image-wrapper">{%- if section.settings.image_2 == nil -%}<img src="{{ '6159d1d9c5ddbef5bb672ba0_amethyst-raw-earrings-951642-1.jpg' | asset_url }}" loading="lazy" alt="" class="image-max-cover">{%- else -%}<img src="{{ section.settings.image_2.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_2.alt | escape }}" class="image-max-cover" srcset="{{ section.settings.image_2 | img_url: '1920x' }} 1920w,{{ section.settings.image_2 | img_url: '1600x' }} 1600w,{{ section.settings.image_2 | img_url: '1366x' }} 1366w,{{ section.settings.image_2 | img_url: '1024x' }} 1024w,{{ section.settings.image_2 | img_url: '768x' }} 768w,{{ section.settings.image_2 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h1 class="heading-2 center small">{{ section.settings.sub_heading_2 }}</h1>
+                <h1 class="heading-3 center small">{{ section.settings.heading_2 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.offer_3_link }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper">
+              <div class="product-image-wrapper">{%- if section.settings.image_3 == nil -%}<img class="image-max-cover" src="{{ 'moonstone-phone-charm-817744.jpeg' | asset_url }}" alt="" sizes="(max-width: 479px) 63vw, (max-width: 991px) 44vw, 24vw" loading="lazy" srcset="{{ 'moonstone-phone-charm-817744-p-500.jpeg' | asset_url }} 500w, {{ 'moonstone-phone-charm-817744.jpeg' | asset_url }} 2048w">{%- else -%}<img class="image-max-cover" src="{{ section.settings.image_3.src | img_url: 'master' }}" alt="{{ section.settings.image_3.alt | escape }}" loading="lazy" srcset="{{ section.settings.image_3 | img_url: '1920x' }} 1920w,{{ section.settings.image_3 | img_url: '1600x' }} 1600w,{{ section.settings.image_3 | img_url: '1366x' }} 1366w,{{ section.settings.image_3 | img_url: '1024x' }} 1024w,{{ section.settings.image_3 | img_url: '768x' }} 768w,{{ section.settings.image_3 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h2 class="heading-2 center small">{{ section.settings.sub_heading_3 }}</h2>
+                <h1 class="heading-3 center small">{{ section.settings.heading_3 }}</h1>
+              </div>
+            </div>
+          </a>
+          <a href="{{ section.settings.offer_4_link }}" class="categorie-link w-inline-block">
+            <div class="product-card-wrapper">
+              <div class="product-image-wrapper">{%- if section.settings.image_4 == nil -%}<img src="{{ 'green_blob.jpg' | asset_url }}" loading="lazy" alt="" class="image-max-cover">{%- else -%}<img src="{{ section.settings.image_4.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_4.alt | escape }}" class="image-max-cover" srcset="{{ section.settings.image_4 | img_url: '1920x' }} 1920w,{{ section.settings.image_4 | img_url: '1600x' }} 1600w,{{ section.settings.image_4 | img_url: '1366x' }} 1366w,{{ section.settings.image_4 | img_url: '1024x' }} 1024w,{{ section.settings.image_4 | img_url: '768x' }} 768w,{{ section.settings.image_4 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              <div class="product-content-wrapper">
+                <h2 class="heading-2 center small">{{ section.settings.sub_heading_4 }}</h2>
+                <h1 class="heading-3 center small">{{ section.settings.text }}</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","diwali-section wf-section");</script>
+        
+{% schema %}
+{
+  "name": "festive offer jewellery",
+  "tag": "div",
+  "class": "diwali-section wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "heading",
+      "default": "Best Festive Offers"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_1",
+      "label": "sub heading 1",
+      "default": "Under ₹1199"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "heading 1",
+      "default": "Mask Chains"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_2",
+      "label": "sub heading 2",
+      "default": "Under ₹699 "
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "heading 2",
+      "default": "Crystal Earrings"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_3",
+      "label": "sub heading 3",
+      "default": "Phone Charms"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "label": "heading 3",
+      "default": "New Release"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading_4",
+      "label": "sub heading 4",
+      "default": "Necklaces"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "text",
+      "default": "On Sale"
+    },
+    {
+      "type": "textarea",
+      "id": "text_area",
+      "label": "text area",
+      "default": "The Estrella Collection has been our most loved collection since we launched it! These dainty yet modern style catches everyone’s attention.Wear it every day as your statement necklace. Wear it close to your Heart, make it a part of your being. ❤️🕊️"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "image 4"
+    },
+    {
+      "type": "url",
+      "id": "offer_1_link",
+      "label": "offer 1 link"
+    },
+    {
+      "type": "url",
+      "id": "offer_2_link",
+      "label": "offer 2 link"
+    },
+    {
+      "type": "url",
+      "id": "offer_3_link",
+      "label": "offer 3 link"
+    },
+    {
+      "type": "url",
+      "id": "offer_4_link",
+      "label": "offer 4 link"
+    }
+  ]
+}
+{% endschema %}

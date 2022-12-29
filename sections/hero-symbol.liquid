@@ -1,0 +1,63 @@
+
+    <div class="container">
+      <div class="w-layout-grid grid-8col is--pyritebg">
+        <div id="w-node-f38ef75a-4c80-61bc-62cb-9985f6531340-f653133d" class="grid-content-wrapper">
+          <div>
+            <div class="hero-content">
+              <div class="pre-title">{{ section.settings.pre_title }}</div>
+              <h1 class="heading-2 hero-padding">{{ section.settings.heading }}</h1>
+              <p class="subtitle">{{ section.settings.sub_heading }}</p>
+            </div>
+            <a href="{{ section.settings.link }}" class="outline-button background-hover w-button">{{ section.settings.link_text }}</a>
+          </div>
+        </div>
+        <div id="w-node-f38ef75a-4c80-61bc-62cb-9985f6531349-f653133d" class="grid-image-wrapper">{%- if section.settings.image == nil -%}<img class="image-max-cover-hero" src="{{ 'shiv-shakti_1.jpg' | asset_url }}" width="606" height="404" alt="" sizes="91vw" loading="lazy" srcset="{{ 'shiv-shakti_1-p-500.jpeg' | asset_url }} 500w, {{ 'shiv-shakti_1.jpg' | asset_url }} 675w">{%- else -%}<img class="image-max-cover-hero" src="{{ section.settings.image.src | img_url: 'master' }}" width="606" height="404" alt="{{ section.settings.image.alt | escape }}" loading="lazy" srcset="{{ section.settings.image | img_url: '1920x' }} 1920w,{{ section.settings.image | img_url: '1600x' }} 1600w,{{ section.settings.image | img_url: '1366x' }} 1366w,{{ section.settings.image | img_url: '1024x' }} 1024w,{{ section.settings.image | img_url: '768x' }} 768w,{{ section.settings.image | img_url: '640x' }} 640w">{%- endif -%}</div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","hero-section");</script>
+        
+{% schema %}
+{
+  "name": "Hero-symbol",
+  "tag": "section",
+  "class": "hero-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "pre-title",
+      "default": "Bodh is where style meets Spirit!"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "heading",
+      "default": "10% OFF on the Healing Collection!"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "sub-heading",
+      "default": "This Mahashivratri, MANIFEST your intentions with crystals. Use code \"MANIFEST\" to avail the discount."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "link Text",
+      "default": "Browse collection"
+    }
+  ]
+}
+{% endschema %}
